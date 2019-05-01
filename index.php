@@ -22,7 +22,7 @@ if (isset($_POST["submit"]))
     // First insert data to the Parts table
     $sql ="INSERT INTO Parts(pid, pname, color) VALUES 
     ('".addslashes($_POST["PID"])."','".addslashes($_POST["PNAME"])."','".addslashes($_POST["COLOR"])."','".addslashes($_POST["PRICE"])."');";
-    echo $sql."<br>"; //debug
+    //echo $sql."<br>"; //debug
     $result = sqlsrv_query($conn, $sql);
     // In case of failure
     if (!$result)
@@ -33,7 +33,7 @@ if (isset($_POST["submit"]))
     // Now insert data to the Catalog table
     $sql = "INSERT INTO Catalog(sid,pid,cost) VALUES
     ('".addslashes($_POST["SUPID"])."','".addslashes($_POST["PID"])."','".addslashes($_POST["PRICE"])."');";
-    // echo $sql."<br>"; //debug
+    //echo $sql."<br>"; //debug
     $result = sqlsrv_query($conn, $sql);
     // In case of failure
     if (!$result) {
