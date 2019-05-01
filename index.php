@@ -47,12 +47,13 @@ if (isset($_POST["submit"]))
     <select name="SUPID">
         <option value="">Choose Supplier...</option>
         <?php
+        $sql = "SELECT * FROM Suppliers";
+        $result = sqlsrv_query($conn, $sql);
+        while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
+        {
+            echo "<option value=".$row['sid']."'>'".$row['sname']."'</option>'";
+        }
 
-        echo '<option value="1">Sony</option>';
-
-        echo '<option value="2">Panasonic</option>';
-
-        echo '<option value="3">JVC</option>';
 
         ?>
     </select>
