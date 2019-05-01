@@ -21,7 +21,7 @@ if (isset($_POST["submit"]))
 {
     // First insert data to the Parts table
     $sql ="INSERT INTO Parts(pid, pname, color) VALUES 
-    ('".addslashes($_POST["PID"])."','".addslashes($_POST["PNAME"])."','".addslashes($_POST["COLOR"])."','".addslashes($_POST["PRICE"])."');";
+    ('".addslashes($_POST["PID"])."','".addslashes($_POST["PNAME"])."','".addslashes($_POST["COLOR"])."');";
     //echo $sql."<br>"; //debug
     $result = sqlsrv_query($conn, $sql);
     // In case of failure
