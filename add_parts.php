@@ -3,10 +3,10 @@
 <h1>Add Parts</h1>
 <?php
 // Connecting to the database
-$server = "tcp:yourserver.database.windows.net,1433";
-$user = "yourusername";
-$pass = "yourpassword";
-$database = "yourdatabase";
+$server = "tcp:techniondbcourse01.database.windows.net,1433";
+$user = "shubi";
+$pass = "Qwerty12!";
+$database = "shubi";
 $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
 sqlsrv_configure('WarningsReturnAsErrors', 0);
 $conn = sqlsrv_connect($server, $c);
