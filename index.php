@@ -48,11 +48,11 @@ if (isset($_POST["submit"]))
         <option value="">Choose Supplier...</option>
         <?php
 
-        echo '<option value="Sony">Sony</option>';
+        echo '<option value="1">Sony</option>';
 
-        echo '<option value="Panasonic">Panasonic</option>';
+        echo '<option value="2">Panasonic</option>';
 
-        echo '<option value="JVC">JVC</option>';
+        echo '<option value="3">JVC</option>';
 
         ?>
     </select>
