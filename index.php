@@ -51,7 +51,7 @@ if (isset($_POST["submit"]))
         $result = sqlsrv_query($conn, $sql);
         while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
         {
-            echo "<option value=".$row['sid']."'>'".addslashes($row['sname'])."</option>";
+            echo "<option value=".$row['sid'].">".addslashes($row['sname'])."</option>";
         }
 
 
