@@ -20,9 +20,11 @@ if($conn === false)
 if (isset($_POST["submit"]))
 {
     // First insert data to the Parts table
-    $sql = "INSERT INTO Parts(pid,pname,color) VALUES(1,'b','c');";
+    //$sql = "INSERT INTO Parts(pid,pname,color) VALUES(1,'b','c');";
     // echo $sql."<br>"; //debug
     /* Example:  $sql = "INSERT INTO Parts(pid,pname,color) VALUES(1, 'TV', 'Red');"; */
+    $sql ="INSERT INTO Parts(pid, pname, color) VALUES 
+    ('".addslashes($_POST["PID"])."','".addslashes($_POST["PNAME"])."','".addslashes($_POST["COLOR"])."','".addslashes($_POST["PRICE"])."');";
     $result = sqlsrv_query($conn, $sql);
     // In case of failure
     if (!$result)
@@ -46,11 +48,11 @@ if (isset($_POST["submit"]))
         <option value="">Choose Supplier...</option>
         <?php
 
+        echo '<option value="Sony">Sont</option>';
 
+        echo '<option value="Panasonic">Panasonic</option>';
 
-
-
-        echo '<option value="1">Some Supplier</option>'; //debug
+        echo '<option value="JVC">JVC</option>';
 
         ?>
     </select>
