@@ -20,19 +20,19 @@ if($conn === false)
 if (isset($_POST["submit"]))
 {
     // First insert data to the Parts table
-    //$sql = "INSERT INTO Parts(pid,pname,color) VALUES(1,'b','c');";
-    // echo $sql."<br>"; //debug
-    /* Example:  $sql = "INSERT INTO Parts(pid,pname,color) VALUES(1, 'TV', 'Red');"; */
     $sql ="INSERT INTO Parts(pid, pname, color) VALUES 
     ('".addslashes($_POST["PID"])."','".addslashes($_POST["PNAME"])."','".addslashes($_POST["COLOR"])."','".addslashes($_POST["PRICE"])."');";
+    echo $sql."<br>"; //debug
     $result = sqlsrv_query($conn, $sql);
     // In case of failure
     if (!$result)
     {
         die("Couldn't add the part specified.<br>");
     }
+
     // Now insert data to the Catalog table
-    $sql = "INSERT INTO Catalog(sid,pid,cost) VALUES (1,'b',2);";
+    $sql = "INSERT INTO Catalog(sid,pid,cost) VALUES
+    ('".addslashes($_POST["SUPID"])."','".addslashes($_POST["PID"])."','".addslashes($_POST["PRICE"])."');";
     // echo $sql."<br>"; //debug
     $result = sqlsrv_query($conn, $sql);
     // In case of failure
@@ -48,7 +48,7 @@ if (isset($_POST["submit"]))
         <option value="">Choose Supplier...</option>
         <?php
 
-        echo '<option value="Sony">Sont</option>';
+        echo '<option value="Sony">Sony</option>';
 
         echo '<option value="Panasonic">Panasonic</option>';
 
