@@ -47,9 +47,10 @@ if (isset($_POST["submit"]))
         <?php
 
 
+
+
+
         echo '<option value="1">Some Supplier</option>'; //debug
-
-
 
         ?>
     </select>
