@@ -3,9 +3,9 @@
   <h1>Parts Table</h1>
     <?php
     $server = "tcp:techniondbcourse01.database.windows.net,1433";
-    $user = "dbteam";
+    $user = "shubi";
     $pass = "Qwerty12!";
-    $database = "dbteam";
+    $database = "shubi";
     $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
     sqlsrv_configure('WarningsReturnAsErrors', 0);
     $conn = sqlsrv_connect($server, $c);
