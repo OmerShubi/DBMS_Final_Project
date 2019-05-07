@@ -18,12 +18,6 @@ table, th, td {
     border: 1px solid black;
 }
 
-#sticky tr {
-    display: block;
-    position: relative;
-}
-
-
 th
 {
     font-family:Tahoma, Geneva, sans-serif;
@@ -84,6 +78,8 @@ div {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    border: 1px solid black;
+
 }
 
 th.fixed_headers { text-decoration: underline; }
