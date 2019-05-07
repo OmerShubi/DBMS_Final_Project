@@ -2,12 +2,13 @@
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body>
+<body style="text-align:center">
+<h2 style="font-size:20px;color:white"> How Can we do a typical Survey Form?</h2>
 <?php
     include 'db_connection.php';
     $conn = OpenCon();
 ?>
-<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
+<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" style="text-align:left">
     Home Team:<select name="Home">
         <option value="">Choose home team</option>
         <?php
