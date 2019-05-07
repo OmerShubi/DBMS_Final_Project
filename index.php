@@ -6,9 +6,12 @@
 </head>
 
 <body>
-    <img src="Premier_League_Logo.png" alt="Premier League Logo">
     <div class="layer" style="text-align: center">
-        <h1>Premier Pro Analytics</h1>
+    <h1>
+        Premier Pro
+        <img src="Premier_League_Logo.png" alt="Premier League Logo">
+        Analytics
+    </h1>
         <h2>
             Premier League Pro Analytics is an advanced Database & Analytics tool <br>
             <i>for Professionals by Professionals (not newbies)!</i>
@@ -28,7 +31,7 @@
 
     $result = sqlsrv_query($conn, $sql);
 
-    echo '"<table border="1" style="width:70%" align="center">"';
+    echo '<table border="1" style="width:70%" align="center">';
 
     echo "<tr><th>ID</th><th>Home</th><th>Away</th><th>Notes</th><th>Game Result</th><th>Season</th><th>Sum</th></tr>";
 
