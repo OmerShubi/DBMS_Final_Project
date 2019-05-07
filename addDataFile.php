@@ -12,15 +12,20 @@
         // Connect to the database
             $file = $_FILES[csv][tmp_name];
             if (($handle = fopen($file, "r")) !== FALSE) {
+                // Assuming first row stores column name --> skip insertion
+                $data = fgetcsv($handle, 1000, ",");
+                $counter = 1;
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-                    $sql="INSERT INTO PremierLeague (id, Home, Away, notes, home_goals, away_goals, result, season) VALUES 
-                    ('".addslashes($data[0])."','".addslashes($data[1])."','"
-                        .addslashes($data[2])."','".addslashes($data[3])."','"
-                        .addslashes($data[4])."','".addslashes($data[5])."','"
-                        .addslashes($data[6])."','".addslashes($data[7])."'); ";
-                 sqlsrv_query($conn, $sql);
-                    }
-                  fclose($handle); } }
+                    $sql="INSERT INTO PremierLeague (id, Home, Away, home_goals, away_goals, result, season, notes) VALUES 
+                    ('".addslashes($counter)."','".addslashes($data[0])."','".addslashes($data[1])."','"
+                        .addslashes($data[2])."','".addslashes($data[3])."','".addslashes($data[4])."','"
+                        .addslashes($data[5])."','".addslashes($data[6])."'); ";
+                    sqlsrv_query($conn, $sql);
+                    $counter = $counter + 1;
+                }
+                fclose($handle);
+            }
+        }
     ?>
 </body>
 </html>
