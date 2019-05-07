@@ -5,10 +5,11 @@
 </head>
 
 <body>
-    <h1>Premier League Pro Analytics</h1>
-    <img src="Premier_League_Logo.png" width=80%>
+    <h1>Premier Pro Analytics</h1>
+    <img src="Premier_League_Logo.png" width=50%>
     <h2>
-        This site hosts results of all Premier League Games from 06' till today! <br> Enjoy!!!
+        Premier League Pro Analytics is an advanced Database & Analytics tool <br>
+        <i>for Professionals by Professionals (not newbies)!</i>
     </h2>
 
     <?php
