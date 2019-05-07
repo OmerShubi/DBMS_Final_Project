@@ -32,7 +32,7 @@
 
     $result = sqlsrv_query($conn, $sql);
 
-    echo '<table border="1" style="width:70%" align="center">';
+    echo '<table style="width:70%;">';
 
     echo "<tr><th>ID</th><th>Home</th><th>Away</th><th>Notes</th><th>Game Result</th><th>Season</th><th>Sum</th></tr>";
 
