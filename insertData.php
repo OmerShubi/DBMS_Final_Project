@@ -5,8 +5,8 @@
     $conn = OpenCon();
 ?>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
-    <select name="Home">
-        <option value="Home Team:">Choose home team</option>
+    <select name="Home">Home Team:
+        <option value="">Choose home team</option>
         <?php
             $sql = "SELECT * FROM PremierLeague";
             $result = sqlsrv_query($conn, $sql);
@@ -16,10 +16,10 @@
             }
         ?>
     </select><br>
-    <select name="Away">
-        <option value="Away Team:">Choose away team</option>
+    <select name="Away">Away Team:
+        <option value="">Choose away team</option>
         <?php
-        $sql = "SELECT AWAY FROM PremierLeague";
+        $sql = "SELECT * FROM PremierLeague";
         $result = sqlsrv_query($conn, $sql);
         while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
         {
@@ -45,10 +45,10 @@
         </tr>
         <tr>
             <td>Season*</td>
-            <td><input name="season" type="text" size="20"></td>
+            <td><input name="season" type="text" size="20" required></td>
         </tr>
         <tr>
-            <td colspan="2"><textarea name="suggestions" Rows="5" cols="20">Write here a special note</textarea></td>
+            <td colspan="2"><textarea name="suggestions" Rows="5" cols="30">Write here a special note</textarea></td>
         </tr>
         <tr>
             <td><input name="submit" type="submit" value="Add Result"></td>
