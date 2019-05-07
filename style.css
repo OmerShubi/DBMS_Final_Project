@@ -48,7 +48,11 @@ a:visited  {color:white}
 a:active   {color:yellow}
 a:hover    {color:blue}
 
-body {background: #58c2ff url("background.jpg")}
+body {
+    background: #58c2ff url("background.jpg");
+    text-align: center;
+
+}
 
 img {
     border:1px solid #000000;
