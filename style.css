@@ -50,7 +50,7 @@ div {
     margin: auto;
 }
 
-#fixed_headers table{
+#fixed_headers{
     table-layout: fixed;
     border-collapse: collapse;
     border: 1px solid black;

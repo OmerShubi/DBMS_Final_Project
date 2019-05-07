@@ -8,7 +8,7 @@
     include 'db_connection.php';
     $conn = OpenCon();
 ?>
-<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" style="text-align:left">
+<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" style="text-align: center">
     Home Team:<select name="Home">
         <option value="">Choose home team</option>
         <?php
