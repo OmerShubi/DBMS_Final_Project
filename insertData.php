@@ -5,7 +5,7 @@
     $conn = OpenCon();
 ?>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
-    <select name="Home">Home Team:
+    Home Team:<select name="Home">
         <option value="">Choose home team</option>
         <?php
             $sql = "SELECT * FROM PremierLeague";
@@ -16,7 +16,7 @@
             }
         ?>
     </select><br>
-    <select name="Away">Away Team:
+    Away Team:<select name="Away">
         <option value="">Choose away team</option>
         <?php
         $sql = "SELECT * FROM PremierLeague";
