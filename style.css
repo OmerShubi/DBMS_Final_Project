@@ -11,7 +11,9 @@ table
     color: black;
     text-align: left;
     word-spacing: normal;
-    border: 1px;
+}
+table, th, td {
+    border: 1px solid black;
 }
 
 th
