@@ -1,5 +1,9 @@
 <html>
 <body>
+<?php
+    include 'db_connection.php';
+    $conn = OpenCon();
+    ?>
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
 
         <input name="csv" type="file" id="csv" />
@@ -8,7 +12,8 @@
     </form>
 
     <?php
-        if (isset($_POST["submit"])){
+
+    if (isset($_POST["submit"])){
         // Connect to the database
             $file = $_FILES[csv][tmp_name];
             if (($handle = fopen($file, "r")) !== FALSE) {
