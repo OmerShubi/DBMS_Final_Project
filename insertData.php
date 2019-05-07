@@ -45,15 +45,33 @@
         </tr>
         <tr>
             <td>Season*</td>
-            <td><input name="season" type="text" size="20" required></td>
+            <td><input name="season" type="text" size="24" required></td>
         </tr>
         <tr>
-            <td colspan="2"><textarea name="suggestions" Rows="5" cols="30">Write here a special note</textarea></td>
+            <td colspan="2"><textarea name="notes" Rows="5" cols="37">Write here a special note</textarea></td>
         </tr>
         <tr>
             <td><input name="submit" type="submit" value="Add Result"></td>
-            <td><input name="submit" type="reset" value="Reset Page"></td>
+            <td><input name="reset" type="reset" value="Reset Page"></td>
         </tr>
     </table>
+    <?php
+    if (isset($_POST["submit"]))
+    {
+        $sql = "SELECT max(id) FROM PremierLeague";
+        $id = sqlsrv_query($conn, $sql);
+        // First insert data to the Parts table
+        $sql = "INSERT INTO PremierLeague (id, Home, Away, notes, home_goals, away_goals, result, season) VALUES
+    ('" . addslashes($_POST[$id + 1]) . "','" . addslashes($_POST['Home']) . "','" . addslashes($_POST['Away']) . "'
+    ,'" . addslashes($_POST['notes']) . "','" . addslashes($_POST['home_goals']) . "','" . addslashes($_POST['away_goals']) . "'
+    ,'" . addslashes($_POST['result']) . "','" . addslashes($_POST['season']) . "');";
+        //echo $sql."<br>"; //debug
+        $result = sqlsrv_query($conn, $sql);
+        // In case of failure
+        if (!$result) {
+            die("Couldn't add the game specified.<br>");
+        }
+    }
+    ?>
 </body>
 </html>
