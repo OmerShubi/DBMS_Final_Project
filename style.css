@@ -6,6 +6,8 @@ h1, h2, h3, h4, h5, form
 
 table
 {
+    table-layout: fixed;
+    border-collapse: collapse;
     background-color:white;
     font-family:Tahoma, Geneva, sans-serif;
     color: black;
@@ -14,6 +16,11 @@ table
 }
 table, th, td {
     border: 1px solid black;
+}
+
+thead {
+        display: block;
+        position: relative;
 }
 
 th
@@ -51,7 +58,7 @@ a:active   {color:yellow}
 a:hover    {color:blue}
 
 body.main {
-    background: #58c2ff url("background.jpg");
+    background: black url("background.jpg");
     width: auto;
     text-align: center;
 

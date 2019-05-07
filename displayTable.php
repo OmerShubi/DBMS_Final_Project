@@ -12,7 +12,7 @@ $sql = "SELECT * FROM PremierLeague;" ;
 
 $result = sqlsrv_query($conn, $sql);
 echo '  <div id="table-scroll">';
-echo '<table style="width:70%; margin-left:15%; margin-right:15%;">';
+echo '<table style="width:90%; margin-left:5%; margin-right:5%;">';
 
 echo "<thead><tr><th>ID</th><th>Home</th><th>Away</th><th>Notes</th><th>Game Result</th><th>Season</th><th>Sum</th></tr></thead>";
 
