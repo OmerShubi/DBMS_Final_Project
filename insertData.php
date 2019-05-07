@@ -56,19 +56,18 @@
     <?php
     if (isset($_POST["submit"]))
     {
+        // Get last ID, increment by one and set as new ID
         $sql = "SELECT max(id) newID FROM PremierLeague";
-        echo $sql."<br>"; //debug
-
         $IDtable = sqlsrv_query($conn, $sql);
         $row = sqlsrv_fetch_array($IDtable, SQLSRV_FETCH_ASSOC);
         $id = $row['newID'] + 1;
-        echo $id."<br>";
+
         // Insert data into PremierLeague table
         $sql = "INSERT INTO PremierLeague (id, Home, Away, notes, home_goals, away_goals, result, season) VALUES
     ('".addslashes($id)."','".addslashes($_POST['Home'])."','".addslashes($_POST['Away'])."'
     ,'".addslashes($_POST['notes'])."','".addslashes($_POST['home_goals'])."','".addslashes($_POST['away_goals'])."'
     ,'".addslashes($_POST['result'])."','".addslashes($_POST['season'])."');";
-        echo $sql."<br>"; //debug
+        //echo $sql."<br>"; //debug
         $result = sqlsrv_query($conn, $sql);
         // In case of failure
         if (!$result) {
