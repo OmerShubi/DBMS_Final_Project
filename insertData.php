@@ -65,7 +65,7 @@
         echo $id."<br>";
         // Insert data into PremierLeague table
         $sql = "INSERT INTO PremierLeague (id, Home, Away, notes, home_goals, away_goals, result, season) VALUES
-    ('".addslashes($_POST[$id])."','".addslashes($_POST['Home'])."','".addslashes($_POST['Away'])."'
+    ('".addslashes($id)."','".addslashes($_POST['Home'])."','".addslashes($_POST['Away'])."'
     ,'".addslashes($_POST['notes'])."','".addslashes($_POST['home_goals'])."','".addslashes($_POST['away_goals'])."'
     ,'".addslashes($_POST['result'])."','".addslashes($_POST['season'])."');";
         echo $sql."<br>"; //debug
