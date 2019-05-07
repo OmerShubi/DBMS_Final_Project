@@ -51,13 +51,12 @@ a:hover    {color:blue}
 body {
     background: #58c2ff url("background.jpg");
     width: auto;
-    opacity: 50%;
     text-align: center;
 
 }
 
 img {
-    border:1px solid #000000;
+    opacity: 0.5;
 }
 
 .layer {

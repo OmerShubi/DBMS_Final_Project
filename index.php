@@ -16,17 +16,44 @@
         <a href="insertData.php" target="mainFrame">INSERT DATA</a><br>
     </h3>
 
-
-
-
-
-
-
-
     <?php
     include 'db_connection.php';
     $conn = OpenCon();
+
     // In case of success
+    // TODO Replace goals with sum of goals
+
+    $sql = "SELECT * 
+            FROM PremierLeague;" ;
+
+    $result = sqlsrv_query($conn, $sql);
+
+    echo "<table>";
+
+    while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
+    {
+        $id = $row['id'];
+        $Home = $row['Home'];
+        $Away= $row['Away'];
+        $notes = $row['notes'];
+        $result = $row['result'];
+        $season = $row['season'];
+        $sum = $row['home_goals'] + $row['away_goals'];
+
+        echo "<tr><td>$id</td></tr>";
+        echo "<tr><td>$Home</td></tr>";
+        echo "<tr><td>$Away</td></tr>";
+        echo "<tr><td>$notes</td></tr>";
+        echo "<tr><td>$result</td></tr>";
+        echo "<tr><td>$season</td></tr>";
+        echo "<tr><td>$sum</td></tr>";
+    }
+
+    echo "</table>";
+
+
+
+
     if (isset($_POST["submit"]))
     {
         // First insert data to the Parts table
