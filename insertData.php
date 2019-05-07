@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <body>
 <?php
     include 'db_connection.php';
@@ -36,16 +36,13 @@
             <td><input name="result" type="radio" value="H">H<br><input name="result" type="radio" value="D">D<br><input name="result" type="radio" value="A">A</td>
         </tr>
         <tr>
-            <td>Home Goals</td>
-            <td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
+            <td>Home Goals</td><td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
         <tr>
-            <td>Away Goals</td>
-            <td><input name="away_goals" type="range" step="1" min="0" max="10"></td>
+            <td>Away Goals</td><td><input name="away_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
         <tr>
-            <td>Season*</td>
-            <td><input name="season" type="text" size="24" required></td>
+            <td>Season*</td><td><input name="season" type="text" size="24" required></td>
         </tr>
         <tr>
             <td colspan="2"><textarea name="notes" Rows="5" cols="37">Write here a special note</textarea></td>
@@ -55,6 +52,7 @@
             <td><input name="reset" type="reset" value="Reset Page"></td>
         </tr>
     </table>
+
     <?php
     if (isset($_POST["submit"]))
     {
@@ -65,7 +63,7 @@
     ('" . addslashes($_POST[$id + 1]) . "','" . addslashes($_POST['Home']) . "','" . addslashes($_POST['Away']) . "'
     ,'" . addslashes($_POST['notes']) . "','" . addslashes($_POST['home_goals']) . "','" . addslashes($_POST['away_goals']) . "'
     ,'" . addslashes($_POST['result']) . "','" . addslashes($_POST['season']) . "');";
-        //echo $sql."<br>"; //debug
+        echo $sql."<br>"; //debug
         $result = sqlsrv_query($conn, $sql);
         // In case of failure
         if (!$result) {

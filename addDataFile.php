@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <body>
 <?php
     include 'db_connection.php';
