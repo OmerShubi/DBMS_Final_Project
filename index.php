@@ -3,12 +3,12 @@
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Premier Pro Analytics</title>
-    <link href="favicon-logo.ico" rel="icon" type="image/x-icon" />
+    <link href="favicon.png" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
 
-        <img src="banner.jpg" alt="Premier League Logo">
+        <img src="banner.jpg" alt="Premier League Logo" style="width: 100%">
 
     <div class="layer" style="text-align: center">
 
