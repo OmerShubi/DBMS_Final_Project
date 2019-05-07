@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Premier Pro Analytics</title>
+    <link rel="shortcut icon" href="favicon-logo.ico" type="image/x-icon"/>
+
 </head>
 
 <body>
