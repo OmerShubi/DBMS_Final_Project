@@ -17,14 +17,15 @@
             <i>for Professionals by Professionals (not newbies)!</i><br><br>
         </h2>
         <h3>
-            <!--TODO iframe-->
-            <a href="addDataFile.php" target="mainFrame">ADD DATA FILE</a>
+            <a href="displayTable.php" target="displayTable">ADD DATA FILE</a>
             &nbsp;&nbsp;&nbsp;
-            <a href="insertData.php" target="mainFrame">INSERT DATA</a><br>
+            <a href="addDataFile.php" target="addDataFile">ADD DATA FILE</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="insertData.php" target="insertData">INSERT DATA</a><br>
         </h3>
-        <iframe name="leftFrame" width="20%" height="100%" src="addDataFile.php"></iframe>
-        <iframe name="mainFrame" width="79%" height="100%" src="insertData.php"></iframe>
-        <iframe name="mainFrame" width="79%" height="100%" src="displayTable.php"></iframe>
+        <iframe name="addDataFile" width="79%" height="100%" src="addDataFile.php"></iframe>
+        <iframe name="insertData" width="79%" height="100%" src="insertData.php"></iframe>
+        <iframe name="displayTable" width="79%" height="100%" src="displayTable.php"></iframe>
     </div>
 </body>
 </html>
