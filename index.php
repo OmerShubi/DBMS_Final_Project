@@ -29,6 +29,9 @@
     $result = sqlsrv_query($conn, $sql);
 
     echo '"<table border="1" style="width:70%" align="center">"';
+
+    echo "<tr><th>ID</th><th>Home</th><th>Away</th><th>Notes</th><th>Game Result</th><th>Season</th><th>Sum</th></tr>";
+
     while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
     {
         $id = $row['id'];
