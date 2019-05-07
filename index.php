@@ -23,7 +23,7 @@
             &nbsp;&nbsp;&nbsp;
             <a href="insertData.php" target="MainFrame">INSERT DATA</a><br>
         </h3>
-        <iframe name="MainFrame" width="100%" height="100%"></iframe>
+        <iframe name="MainFrame"></iframe>
 
     </div>
 </body>
