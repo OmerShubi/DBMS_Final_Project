@@ -24,8 +24,7 @@
     // In case of success
     // TODO Replace goals with sum of goals
 
-    $sql = "SELECT * 
-            FROM PremierLeague;" ;
+    $sql = "SELECT * FROM PremierLeague;" ;
 
     $result = sqlsrv_query($conn, $sql);
 
@@ -35,7 +34,7 @@
     {
         echo $counter;
         $counter = $counter + 1;
-        $id = $row['id'];
+     /*   $id = $row['id'];
         $Home = $row['Home'];
         $Away= $row['Away'];
         $notes = $row['notes'];
@@ -43,7 +42,7 @@
         $season = $row['season'];
         $sum = $row['home_goals'] + $row['away_goals'];
 
-        echo "<tr><td>".$id."</td><td>".$Home."</td><td>".$Away."</td><td>".$notes."</td><td>".$result."</td><td>".$season."</td><td>".$sum."</td></tr>";
+        echo "<tr><td>".$id."</td><td>".$Home."</td><td>".$Away."</td><td>".$notes."</td><td>".$result."</td><td>".$season."</td><td>".$sum."</td></tr>";*/
     }
     echo "</table>";
     echo $counter;
