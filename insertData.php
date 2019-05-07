@@ -56,12 +56,12 @@
     <?php
     if (isset($_POST["submit"]))
     {
-        $sql = "SELECT max(id) FROM PremierLeague";
+        $sql = "SELECT max(id) newID FROM PremierLeague";
         echo $sql."<br>"; //debug
 
-        $id = sqlsrv_query($conn, $sql);
-
-        $id = $id + 1;
+        $IDtable = sqlsrv_query($conn, $sql);
+        $row = sqlsrv_fetch_array($IDtable, SQLSRV_FETCH_ASSOC);
+        $id = $row['newID'] + 1;
         echo $id."<br>";
         // Insert data into PremierLeague table
         $sql = "INSERT INTO PremierLeague (id, Home, Away, notes, home_goals, away_goals, result, season) VALUES
