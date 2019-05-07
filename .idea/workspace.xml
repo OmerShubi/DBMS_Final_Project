@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="../../OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/.idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+            <state relative-caret-position="464">
+              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -69,33 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/left.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+            <state relative-caret-position="170">
+              <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -125,11 +103,11 @@
         <option value="$PROJECT_DIR$/temp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb522324-c87d-472c-bfa2-275644142c7b/console.sql" />
         <option value="$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/style.css" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/addDataFile.php" />
         <option value="$PROJECT_DIR$/displayTable.php" />
         <option value="$PROJECT_DIR$/insertData.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -154,15 +132,6 @@
             <path>
               <item name="shubi-technion" type="b2602c69:ProjectViewProjectNode" />
               <item name="shubi-technion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shubi-technion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Tut1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shubi-technion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Tut1" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -245,35 +214,7 @@
       <workItem from="1557230831953" duration="3698000" />
       <workItem from="1557249357850" duration="166000" />
       <workItem from="1557249525402" duration="713000" />
-      <workItem from="1557250435998" duration="16838000" />
-    </task>
-    <task id="LOCAL-00042" summary="data display">
-      <created>1557257243501</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1557257243501</updated>
-    </task>
-    <task id="LOCAL-00043" summary="data display">
-      <created>1557257327415</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1557257327415</updated>
-    </task>
-    <task id="LOCAL-00044" summary="data display">
-      <created>1557257503166</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1557257503166</updated>
-    </task>
-    <task id="LOCAL-00045" summary="data display">
-      <created>1557257603954</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1557257603954</updated>
+      <workItem from="1557250435998" duration="17099000" />
     </task>
     <task id="LOCAL-00046" summary="data display">
       <created>1557257688606</created>
@@ -590,11 +531,39 @@
       <option name="project" value="LOCAL" />
       <updated>1557267205981</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="insertion form">
+      <created>1557267355545</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1557267355545</updated>
+    </task>
+    <task id="LOCAL-00092" summary="insertion form">
+      <created>1557267430671</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1557267430671</updated>
+    </task>
+    <task id="LOCAL-00093" summary="iframe">
+      <created>1557267474325</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1557267474325</updated>
+    </task>
+    <task id="LOCAL-00094" summary="iframe">
+      <created>1557267554080</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1557267554080</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30206000" />
+    <option name="totallyTimeSpent" value="30467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1613" height="873" extended-state="6" />
@@ -686,7 +655,8 @@
     <MESSAGE value="style" />
     <MESSAGE value="favicon" />
     <MESSAGE value="insertion form" />
-    <option name="LAST_COMMIT_MESSAGE" value="insertion form" />
+    <MESSAGE value="iframe" />
+    <option name="LAST_COMMIT_MESSAGE" value="iframe" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/contacts_table.sql" />
@@ -776,13 +746,6 @@
     <entry file="file://$PROJECT_DIR$/favicon-logo.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/form/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -862,8 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        <state relative-caret-position="464">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -874,6 +837,13 @@
             <element signature="e#650#656#0#HTML" expanded="true" />
             <element signature="e#656#662#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
         </state>
       </provider>
     </entry>
