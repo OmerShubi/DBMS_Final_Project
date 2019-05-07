@@ -1,7 +1,7 @@
 <html>
 <body>
 <h1>All you ever wanted to know about the Premier League</h1>
-<img src="image1.jpg" width=25% height="300">
+<img src="Premier_League_Logo.png" width=80%>
 <?php
 // Connecting to the database
 $server = "tcp:techniondbcourse01.database.windows.net,1433";
