@@ -1,25 +1,25 @@
 <html>
 <body>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
-    <select name="SUPID">
-        <option value="">Choose Supplier...</option>
+    <select name="Home">
+        <option value="">Home Team:</option>
         <?php
-            $sql = "SELECT * FROM PremierLeague";
+            $sql = "SELECT HOME FROM PremierLeague";
             $result = sqlsrv_query($conn, $sql);
             while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
             {
-                echo "<option value=".$row['sid'].">".addslashes($row['sname'])."</option>";
+                echo "<option value=".$row['Home'].">".addslashes($row['Home'])."</option>";
             }
         ?>
-    </select>
-    <select name="SUPID">
-        <option value="">Choose Supplier...</option>
+    </select><br>
+    <select name="Away">
+        <option value="">Away Team:</option>
         <?php
-        $sql = "SELECT * FROM PremierLeague";
+        $sql = "SELECT AWAY FROM PremierLeague";
         $result = sqlsrv_query($conn, $sql);
         while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
         {
-            echo "<option value=".$row['sid'].">".addslashes($row['sname'])."</option>";
+            echo "<option value=".$row['Away'].">".addslashes($row['Away'])."</option>";
         }
         ?>
     </select>
@@ -41,13 +41,14 @@
         </tr>
         <tr>
             <td>Season*</td>
-            <td><input name="season" type="text" size="50"></td>
+            <td><input name="season" type="text" size="20"></td>
         </tr>
         <tr>
             <td colspan="2"><textarea name="suggestions" Rows="5" cols="70">Write your comments here</textarea></td>
         </tr>
         <tr>
-            <td colspan="2"><br><input name="submit" type="submit" value="Send"></td>
+            <td><input name="submit" type="submit" value="Send">Add Result</td>
+            <td><input name="submit" type="reset" value="reset">Reset Page</td>
         </tr>
     </table>
 </body>
