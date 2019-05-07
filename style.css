@@ -4,28 +4,7 @@ h1, h2, h3, h4, h5, form
     color: white;
 }
 
-table
-{
-    table-layout: fixed;
-    border-collapse: collapse;
-    background-color:white;
-    font-family:Tahoma, Geneva, sans-serif;
-    color: black;
-    text-align: left;
-    word-spacing: normal;
-}
-table, th, td {
-    border: 1px solid black;
-}
-
-th
-{
-    font-family:Tahoma, Geneva, sans-serif;
-    color: black;
-    text-align: center;
-    word-spacing: normal;
-}
-p,li,th,td
+p,li
 {
     font-family:Tahoma, Geneva, sans-serif;
     color: black;
@@ -76,7 +55,7 @@ div {
     table-layout: fixed;
     border-collapse: collapse;
     border: 1px solid black;
-
+    margin: auto;
 }
 table.fixed_headers{
     width: 90%;
