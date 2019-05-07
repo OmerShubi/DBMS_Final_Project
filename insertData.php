@@ -4,7 +4,7 @@
     <select name="SUPID">
         <option value="">Choose Supplier...</option>
         <?php
-            $sql = "SELECT * FROM Suppliers";
+            $sql = "SELECT * FROM PremierLeague";
             $result = sqlsrv_query($conn, $sql);
             while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
             {
@@ -15,7 +15,7 @@
     <select name="SUPID">
         <option value="">Choose Supplier...</option>
         <?php
-        $sql = "SELECT * FROM Suppliers";
+        $sql = "SELECT * FROM PremierLeague";
         $result = sqlsrv_query($conn, $sql);
         while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
         {
@@ -29,7 +29,7 @@
             <td>Result:</td>
         </tr>
         <tr>
-            <td><input name="result" type="radio" value="H"><br><input name="result" type="radio" value="D"><br><input name="result" type="radio" value="A"></td>
+            <td><input name="result" type="radio" value="H">H<br><input name="result" type="radio" value="D">D<br><input name="result" type="radio" value="A">A</td>
         </tr>
         <tr>
             <td>Home Goals</td>
@@ -41,12 +41,14 @@
         </tr>
         <tr>
             <td>Season*</td>
-            <td><input name="season" type="text" size="5"></td>
+            <td><input name="season" type="text" size="50"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><textarea name="suggestions" Rows="5" cols="70">Write your comments here</textarea></td>
         </tr>
         <tr>
             <td colspan="2"><br><input name="submit" type="submit" value="Send"></td>
         </tr>
-//TODO notes
     </table>
 </body>
 </html>
