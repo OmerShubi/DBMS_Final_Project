@@ -45,8 +45,8 @@
 
         echo "<tr><td>".$id."</td><td>".$Home."</td><td>".$Away."</td><td>".$notes."</td><td>".$result."</td><td>".$season."</td><td>".$sum."</td></tr>";
     }
-
     echo "</table>";
+    echo $counter;
     ?>
     </div>
 </body>
