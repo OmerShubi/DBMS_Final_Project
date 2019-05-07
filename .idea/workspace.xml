@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="Start of HW2 - Title &amp; image addition">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bb522324-c87d-472c-bfa2-275644142c7b.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bb522324-c87d-472c-bfa2-275644142c7b/storage_v2/_src_/database/shubi.B5mFBg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bb522324-c87d-472c-bfa2-275644142c7b/storage_v2/_src_/database/shubi.B5mFBg/schema/dbo.sYMBAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,46 +39,10 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/left.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/image/image.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -94,14 +51,20 @@
         <option value="$PROJECT_DIR$/example.php" />
         <option value="$PROJECT_DIR$/contacts_table.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb522324-c87d-472c-bfa2-275644142c7b/console.sql" />
+        <option value="$USER_HOME$/XAMPP/htdocs/temp" />
+        <option value="$USER_HOME$/XAMPP/htdocs/db_connnection.php" />
+        <option value="$USER_HOME$/XAMPP/htdocs/index.php" />
+        <option value="$PROJECT_DIR$/temp" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1584" />
-    <option name="width" value="1630" />
-    <option name="height" value="1716" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1622" />
+    <option name="height" value="1732" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -112,26 +75,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="shubi-technion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shubi-technion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shubi-technion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Tut1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shubi-technion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Tut1" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,9 +84,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -156,12 +101,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.index.php">
+    <configuration name="localhost:8080" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080">
+      <method v="2" />
+    </configuration>
+    <configuration name="shubi-technion" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="add_parts.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/add_parts.php">
       <method v="2" />
     </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$USER_HOME$/XAMPP/htdocs/index.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.localhost:8080" />
+      <item itemvalue="PHP Script.add_parts.php" />
+      <item itemvalue="PHP Script.index.php" />
+      <item itemvalue="PHPUnit.shubi-technion" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="JavaScript Debug.localhost:8080" />
+        <item itemvalue="PHPUnit.shubi-technion" />
         <item itemvalue="PHP Script.add_parts.php" />
       </list>
     </recent_temporary>
@@ -177,7 +141,9 @@
       <option name="presentableId" value="Default" />
       <updated>1556720014471</updated>
       <workItem from="1556720015708" duration="6296000" />
-      <workItem from="1557228112438" duration="1159000" />
+      <workItem from="1557228112438" duration="2495000" />
+      <workItem from="1557230831953" duration="3698000" />
+      <workItem from="1557249357850" duration="166000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1556720068259</created>
@@ -305,22 +271,35 @@
       <option name="project" value="LOCAL" />
       <updated>1557228950245</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Start of HW2 - Title &amp; image addition">
+      <created>1557229324985</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1557229324985</updated>
+    </task>
+    <task id="LOCAL-00020" summary="text add">
+      <created>1557230118091</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1557230118091</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7455000" />
+    <option name="totallyTimeSpent" value="12655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1613" height="873" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2527331" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25916398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -332,10 +311,11 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3257066" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32974428" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32990354" />
+      <window_info anchor="right" id="Database" order="3" weight="0.54050463" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,26 +346,35 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="&#10;Init" />
     <MESSAGE value="&#10;should work" />
     <MESSAGE value="Start of HW2 - Title &amp; image addition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start of HW2 - Title &amp; image addition" />
+    <MESSAGE value="text add" />
+    <option name="LAST_COMMIT_MESSAGE" value="text add" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/contacts_table.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/aa80f0ce-31a7-4b49-b788-96df21058e7f/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://bb522324-c87d-472c-bfa2-275644142c7b/database/shubi/schema/dbo/table/Cars">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://bb522324-c87d-472c-bfa2-275644142c7b/database/shubi/schema/dbo/table/Cars" />
     <entry file="file://$PROJECT_DIR$/example.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -393,13 +382,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CreateTablesScript.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="86" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateTablesScript.sql" />
     <entry file="file://$PROJECT_DIR$/add_parts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -407,17 +390,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/XAMPP/htdocs/add_parts.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb522324-c87d-472c-bfa2-275644142c7b/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="68">
+          <caret line="4" column="43" selection-start-line="4" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -434,10 +420,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/XAMPP/htdocs/temp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/XAMPP/htdocs/db_connnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/XAMPP/htdocs/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="134">
+          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
