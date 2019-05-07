@@ -30,9 +30,11 @@
     $result = sqlsrv_query($conn, $sql);
 
     echo "<table>";
-
+    $counter = 0 ;
     while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
     {
+        echo $counter;
+        $counter = $counter + 1;
         $id = $row['id'];
         $Home = $row['Home'];
         $Away= $row['Away'];
