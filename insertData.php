@@ -57,7 +57,10 @@
     if (isset($_POST["submit"]))
     {
         $sql = "SELECT max(id) FROM PremierLeague";
+        echo $sql."<br>"; //debug
+
         $id = sqlsrv_query($conn, $sql);
+
         $id = $id + 1;
         echo $id."<br>";
         // Insert data into PremierLeague table
