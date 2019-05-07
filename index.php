@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1>Add Parts</h1>
+<h1>All you ever wanted to know about the Premier League</h1>
 <?php
 // Connecting to the database
 $server = "tcp:techniondbcourse01.database.windows.net,1433";
