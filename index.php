@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -29,11 +29,8 @@
     $result = sqlsrv_query($conn, $sql);
 
     echo "<table>";
-    $counter = 0 ;
     while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
     {
-        echo $counter;
-        $counter = $counter + 1;
         $id = $row['id'];
         $Home = $row['Home'];
         $Away= $row['Away'];
@@ -45,7 +42,6 @@
         echo "<tr><td>".$id."</td><td>".$Home."</td><td>".$Away."</td><td>".$notes."</td><td>".$game_result."</td><td>".$season."</td><td>".$sum."</td></tr>";
     }
     echo "</table>";
-    echo $counter;
     ?>
     </div>
 </body>
