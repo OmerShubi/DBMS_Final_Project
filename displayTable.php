@@ -1,3 +1,7 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
 <?php
 include 'db_connection.php';
 $conn = OpenCon();
@@ -26,3 +30,4 @@ while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
 }
 echo "</table>";
 ?>
+</html>

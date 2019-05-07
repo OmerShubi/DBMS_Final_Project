@@ -1,4 +1,7 @@
 <html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
 <body>
 <?php
     include 'db_connection.php';
