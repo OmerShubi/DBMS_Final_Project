@@ -1,5 +1,9 @@
 <html>
 <body>
+<?php
+    include 'db_connection.php';
+    $conn = OpenCon();
+?>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
     <select name="Home">
         <option value="Home Team:">Choose home team</option>
