@@ -58,11 +58,13 @@
     {
         $sql = "SELECT max(id) FROM PremierLeague";
         $id = sqlsrv_query($conn, $sql);
-        // First insert data to the Parts table
+        $id = $id + 1;
+        echo $id."<br>";
+        // Insert data into PremierLeague table
         $sql = "INSERT INTO PremierLeague (id, Home, Away, notes, home_goals, away_goals, result, season) VALUES
-    ('" . addslashes($_POST[$id + 1]) . "','" . addslashes($_POST['Home']) . "','" . addslashes($_POST['Away']) . "'
-    ,'" . addslashes($_POST['notes']) . "','" . addslashes($_POST['home_goals']) . "','" . addslashes($_POST['away_goals']) . "'
-    ,'" . addslashes($_POST['result']) . "','" . addslashes($_POST['season']) . "');";
+    ('".addslashes($_POST[$id])."','".addslashes($_POST['Home'])."','".addslashes($_POST['Away'])."'
+    ,'".addslashes($_POST['notes'])."','".addslashes($_POST['home_goals'])."','".addslashes($_POST['away_goals'])."'
+    ,'".addslashes($_POST['result'])."','".addslashes($_POST['season'])."');";
         echo $sql."<br>"; //debug
         $result = sqlsrv_query($conn, $sql);
         // In case of failure
