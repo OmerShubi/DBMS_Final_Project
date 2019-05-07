@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <img src="Premier_League_Logo.png" width=50% alt="Premier League Logo">
+    <img src="Premier_League_Logo.png" alt="Premier League Logo">
     <div class="layer" style="text-align: center">
         <h1>Premier Pro Analytics</h1>
         <h2>
@@ -28,7 +28,7 @@
 
     $result = sqlsrv_query($conn, $sql);
 
-    echo "<table>";
+    echo '"<table border="1" style="width:70%" align="center">"';
     while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
     {
         $id = $row['id'];
