@@ -37,12 +37,12 @@
         $id = $row['id'];
         $Home = $row['Home'];
         $Away= $row['Away'];
-        //$notes = $row['notes'];
-     //   $result = $row['result'];
-     //   $season = $row['season'];
-        //$sum = $row['home_goals'] + $row['away_goals'];
+        $notes = $row['notes'];
+        $game_result = $row['result'];
+        $season = $row['season'];
+        $sum = $row['home_goals'] + $row['away_goals'];
 
-        //echo "<tr><td>".$id."</td><td>".$Home."</td><td>".$Away."</td><td>".$notes."</td><td>".$result."</td><td>".$season."</td><td>".$sum."</td></tr>";
+        echo "<tr><td>".$id."</td><td>".$Home."</td><td>".$Away."</td><td>".$notes."</td><td>".$game_result."</td><td>".$season."</td><td>".$sum."</td></tr>";
     }
     echo "</table>";
     echo $counter;
