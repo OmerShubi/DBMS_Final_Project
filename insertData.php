@@ -8,7 +8,7 @@
     <select name="Home">
         <option value="Home Team:">Choose home team</option>
         <?php
-            $sql = "SELECT HOME FROM PremierLeague";
+            $sql = "SELECT * FROM PremierLeague";
             $result = sqlsrv_query($conn, $sql);
             while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
             {
