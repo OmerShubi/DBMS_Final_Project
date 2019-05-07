@@ -75,18 +75,33 @@ div {
 .fixed_headers {
     table-layout: fixed;
     border-collapse: collapse;
+
+}
+table.fixed_headers{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     border: 1px solid black;
 
+    background-color:white;
+    font-family:Tahoma, Geneva, sans-serif;
+    color: black;
+    text-align: left;
+    word-spacing: normal;
 }
 
-th.fixed_headers { text-decoration: underline; }
+th.fixed_headers {
+    text-decoration: underline;
+    font-family:Tahoma, Geneva, sans-serif;
+    color: black;
+    text-align: center;
+    word-spacing: normal;
+}
 
 th.fixed_headers, td.fixed_headers {
     padding: 5px;
     text-align: left;
+    border: 1px solid black;
 }
 
 

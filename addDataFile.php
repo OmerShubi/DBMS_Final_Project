@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body>
+<body style="text-align:center">
 <?php
     include 'db_connection.php';
     $conn = OpenCon();
