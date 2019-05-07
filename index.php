@@ -1,7 +1,11 @@
 <html>
 <body>
-<h1>All you ever wanted to know about the Premier League</h1>
+<h1 style="font-family: Impact">All you ever wanted to know about the Premier League</h1>
 <img src="Premier_League_Logo.png" width=80%>
+<h2>
+    This site hosts results of all Premier League Games from 06' till today! <br> Enjoy!
+</h2>
+
 <?php
 // Connecting to the database
 $server = "tcp:techniondbcourse01.database.windows.net,1433";
