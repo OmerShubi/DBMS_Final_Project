@@ -26,7 +26,6 @@
     $conn = OpenCon();
 
     // In case of success
-    // TODO Replace goals with sum of goals
 
     $sql = "SELECT * FROM PremierLeague;" ;
 
