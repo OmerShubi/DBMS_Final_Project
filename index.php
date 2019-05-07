@@ -14,11 +14,11 @@
     <div class="layer" style="text-align: center">
 
     <h2>
-            Premier League Pro Analytics is an advanced Database & Analytics tool <br>
-            <i>for Professionals by Professionals (not newbies)!</i>
+            <br>Premier League Pro Analytics is an advanced Database & Analytics tool <br>
+            <i>for Professionals by Professionals (not newbies)!</i><br>
         </h2>
         <h3>
-            <a href="addDataFile.php" target="mainFrame">ADD DATA FILE</a><br><br>
+            <a href="addDataFile.php" target="mainFrame">ADD DATA FILE</a>
             <a href="insertData.php" target="mainFrame">INSERT DATA</a><br>
         </h3>
     <?php
