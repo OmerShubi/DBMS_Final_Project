@@ -6,7 +6,7 @@
     <link href="favicon.png" rel="icon" type="image/x-icon" />
 </head>
 
-<body>
+<body class="main">
 
         <img src="banner.jpg" alt="Premier League Logo" style="width: 80%; border: 1px solid black">
 

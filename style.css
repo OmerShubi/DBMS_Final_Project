@@ -50,7 +50,7 @@ a:visited  {color:white}
 a:active   {color:yellow}
 a:hover    {color:blue}
 
-body {
+body.main {
     background: #58c2ff url("background.jpg");
     width: auto;
     text-align: center;
