@@ -2,7 +2,7 @@
 <body>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
     <select name="Home">
-        <option value="">Home Team:</option>
+        <option value="Home Team:">Choose home team</option>
         <?php
             $sql = "SELECT HOME FROM PremierLeague";
             $result = sqlsrv_query($conn, $sql);
@@ -13,7 +13,7 @@
         ?>
     </select><br>
     <select name="Away">
-        <option value="">Away Team:</option>
+        <option value="Away Team:">Choose away team</option>
         <?php
         $sql = "SELECT AWAY FROM PremierLeague";
         $result = sqlsrv_query($conn, $sql);
@@ -44,11 +44,11 @@
             <td><input name="season" type="text" size="20"></td>
         </tr>
         <tr>
-            <td colspan="2"><textarea name="suggestions" Rows="5" cols="70">Write your comments here</textarea></td>
+            <td colspan="2"><textarea name="suggestions" Rows="5" cols="20">Write here a special note</textarea></td>
         </tr>
         <tr>
-            <td><input name="submit" type="submit" value="Send">Add Result</td>
-            <td><input name="submit" type="reset" value="reset">Reset Page</td>
+            <td><input name="submit" type="submit" value="Add Result"></td>
+            <td><input name="submit" type="reset" value="Reset Page"></td>
         </tr>
     </table>
 </body>
