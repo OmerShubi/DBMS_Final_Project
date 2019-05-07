@@ -41,13 +41,13 @@
         $season = $row['season'];
         $sum = $row['home_goals'] + $row['away_goals'];
 
-        echo "<tr><td>$id</td></tr>";
-        echo "<tr><td>$Home</td></tr>";
-        echo "<tr><td>$Away</td></tr>";
-        echo "<tr><td>$notes</td></tr>";
-        echo "<tr><td>$result</td></tr>";
-        echo "<tr><td>$season</td></tr>";
-        echo "<tr><td>$sum</td></tr>";
+        echo "<tr><td>$id</td>";
+        echo "<td>$Home</td>";
+        echo "<td>$Away</td>";
+        echo "<td>$notes</td>";
+        echo "<td>$result</td>";
+        echo "<td>$season</td>";
+        echo "<td>$sum</td></tr>";
     }
 
     echo "</table>";
