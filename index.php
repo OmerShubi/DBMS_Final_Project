@@ -7,6 +7,7 @@
 </h2>
 
 <?php
+include 'db_connection.php';
 $conn = OpenCon();
 // In case of success
 if (isset($_POST["submit"]))
