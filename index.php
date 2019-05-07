@@ -1,4 +1,5 @@
 <html>
+<head>    <link rel="stylesheet" href="style.css" type="text/css"> </head>
 <body>
 <h1 style="font-family: Impact">All you ever wanted to know about the Premier League</h1>
 <img src="Premier_League_Logo.png" width=80%>

@@ -1,0 +1,69 @@
+h1, h2, h3, h4, h5, form
+{
+    font-family: Verdana, Geneva, sans-serif;
+    color: white;
+}
+
+table
+{
+    background-color:white;
+    font-family:Tahoma, Geneva, sans-serif;
+    margin-left: 10pt;
+    color: black;
+    text-align: left;
+    word-spacing: normal;
+
+}
+
+th
+{
+    font-family:Tahoma, Geneva, sans-serif;
+    color: black;
+    text-align: center;
+    word-spacing: normal;
+}
+p,li,th,td
+{
+    font-family:Tahoma, Geneva, sans-serif;
+    color: black;
+    text-align: center;
+    word-spacing: normal;
+}
+
+hr
+{
+    color:white
+}
+
+iframe
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 200px;
+    height: 200px;
+}
+a:link {font-family: Tahoma, Geneva, sans-serif ; color:white}
+a:visited  {color:white}
+a:active   {color:yellow}
+a:hover    {color:blue}
+
+body {background: #58c2ff url("background.jpg")}
+
+img {
+    border:1px solid #000000;
+}
+
+.layer {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 1250px;
+
+}
+
+div {
+
+    margin: auto;
+}
+
+
+
