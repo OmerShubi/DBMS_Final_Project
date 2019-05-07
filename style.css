@@ -4,6 +4,10 @@ h1, h2, h3, h4, h5, form
     color: white;
 }
 
+form{
+    text-align: center;
+}
+
 p,li
 {
     font-family:Tahoma, Geneva, sans-serif;
@@ -51,13 +55,13 @@ div {
 }
 
 
-.fixed_headers {
+#fixed_headers {
     table-layout: fixed;
     border-collapse: collapse;
     border: 1px solid black;
     margin: auto;
 }
-table.fixed_headers{
+#fixed_headers table{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -70,7 +74,7 @@ table.fixed_headers{
     word-spacing: normal;
 }
 
-th.fixed_headers {
+#fixed_headers th {
     text-decoration: underline;
     font-family:Tahoma, Geneva, sans-serif;
     color: black;
@@ -78,20 +82,20 @@ th.fixed_headers {
     word-spacing: normal;
 }
 
-th.fixed_headers, td.fixed_headers {
+#fixed_headers th,#fixed_headers  td{
     padding: 5px;
     text-align: left;
     border: 1px solid black;
 }
 
 
-thead tr.fixed_headers {
+#fixed_headers thead tr {
     display: block;
     position: relative;
     border: 1px solid black;
 }
 
-tbody.fixed_headers {
+#fixed_headers tbody{
     display: block;
     overflow: auto;
     width: 100%;
