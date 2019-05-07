@@ -8,7 +8,7 @@
 
 <body>
 
-        <img src="banner.jpg" alt="Premier League Logo" style="width: auto; border: 1px solid black">
+        <img src="banner.jpg" alt="Premier League Logo" style="width: 80%; border: 1px solid black">
 
     <div class="layer" style="text-align: center">
 

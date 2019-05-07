@@ -4,38 +4,49 @@
     <select name="SUPID">
         <option value="">Choose Supplier...</option>
         <?php
+            $sql = "SELECT * FROM Suppliers";
+            $result = sqlsrv_query($conn, $sql);
+            while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
+            {
+                echo "<option value=".$row['sid'].">".addslashes($row['sname'])."</option>";
+            }
+        ?>
+    </select>
+    <select name="SUPID">
+        <option value="">Choose Supplier...</option>
+        <?php
         $sql = "SELECT * FROM Suppliers";
         $result = sqlsrv_query($conn, $sql);
         while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
         {
             echo "<option value=".$row['sid'].">".addslashes($row['sname'])."</option>";
         }
-
-
         ?>
     </select>
-    <h2>Part Details</h2>
+
     <table border="0" cellpadding="5">
         <tr>
-            <td>ID</td>
-            <td><input name="PID" type="text" size="10"></td>
+            <td>Result:</td>
         </tr>
         <tr>
-            <td>Name</td>
-            <td><input name="PNAME" type="text" size="20"></td>
+            <td><input name="result" type="radio" value="H"><br><input name="result" type="radio" value="D"><br><input name="result" type="radio" value="A"></td>
         </tr>
         <tr>
-            <td>Color</td>
-            <td><input name="COLOR" type="text" size="10"></td>
+            <td>Home Goals</td>
+            <td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
         <tr>
-            <td>Price</td>
-            <td><input name="PRICE" type="text" size="5"></td>
+            <td>Away Goals</td>
+            <td><input name="away_goals" type="range" step="1" min="0" max="10"></td>
+        </tr>
+        <tr>
+            <td>Season*</td>
+            <td><input name="season" type="text" size="5"></td>
         </tr>
         <tr>
             <td colspan="2"><br><input name="submit" type="submit" value="Send"></td>
         </tr>
-
+//TODO notes
     </table>
 </body>
 </html>
