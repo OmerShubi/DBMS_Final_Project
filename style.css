@@ -41,6 +41,8 @@ iframe
     margin: 0;
     padding: 0;
     border: none;
+    width: 100%;
+    height: 100%;
 }
 
 a:link {font-family: Tahoma, Geneva, sans-serif ; color:white}
