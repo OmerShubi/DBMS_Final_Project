@@ -8,7 +8,7 @@
 <body>
     <h1 style="vertical-align: middle">
         Premier Pro
-        <img src="Premier_League_Logo.png" alt="Premier League Logo">
+<!--        <img src="Premier_League_Logo.png" alt="Premier League Logo">-->
         Analytics
     </h1>
     <div class="layer" style="text-align: center">
