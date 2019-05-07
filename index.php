@@ -7,16 +7,14 @@
 </head>
 
 <body>
-    <h1 style="vertical-align: middle">
-        Premier Pro
-        <img src="Premier_League_Logo.png" alt="Premier League Logo">
-        Analytics
-    </h1>
+
+        <img src="banner.jpg" alt="Premier League Logo">
+
     <div class="layer" style="text-align: center">
 
     <h2>
             <br>Premier League Pro Analytics is an advanced Database & Analytics tool <br><br>
-            <i>for Professionals by Professionals (not newbies)!</i><br><br><br>
+            <i>for Professionals by Professionals (not newbies)!</i><br><br>
         </h2>
         <h3>
             <a href="addDataFile.php" target="mainFrame">ADD DATA FILE</a>
