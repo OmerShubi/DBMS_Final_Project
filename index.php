@@ -6,13 +6,14 @@
 </head>
 
 <body>
-    <div class="layer" style="text-align: center">
-    <h1>
+    <h1 style="vertical-align: middle">
         Premier Pro
         <img src="Premier_League_Logo.png" alt="Premier League Logo">
         Analytics
     </h1>
-        <h2>
+    <div class="layer" style="text-align: center">
+
+    <h2>
             Premier League Pro Analytics is an advanced Database & Analytics tool <br>
             <i>for Professionals by Professionals (not newbies)!</i>
         </h2>
