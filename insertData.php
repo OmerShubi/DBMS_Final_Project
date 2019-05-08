@@ -96,7 +96,7 @@
 
             // In case of failure
             if (!$result) {
-                die("<h3 style='color:darkred;'>UPLOAD FAILED</h3>");
+                die("<h3 style='color:darkred;'>UPLOAD FAILED<br>(Season should be max 10 characters)</h3>");
             }
             else{
                 echo "<H3 style='color: darkgreen'>MATCH ADDED</H3>";
