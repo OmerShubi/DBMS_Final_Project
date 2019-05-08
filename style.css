@@ -8,11 +8,13 @@ table
 {
     background-color:white;
     font-family:Tahoma, Geneva, sans-serif;
-    margin-left: 10pt;
     color: black;
+    border: 1px solid black;
     text-align: left;
     word-spacing: normal;
-
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
 }
 
 th
