@@ -6,8 +6,8 @@
 <body>
     <?php
         include 'db_connection.php';
+        createTable();
         $conn = OpenCon();
-
         $sql = "SELECT * FROM PremierLeague;" ;
 
         $result = sqlsrv_query($conn, $sql);
