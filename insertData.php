@@ -56,7 +56,7 @@
             <td><input name="reset" type="reset" value="Reset Page"></td>
         </tr>
     </table>
-
+</form>
     <?php
     if (isset($_POST["submit"]))
     {
