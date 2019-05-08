@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body style="text-align:center">
-<h2 style="font-size:20px;color:white"> How Can we do a typical Survey Form?</h2>
+<h2 style="font-size:20px;color:white">Whole new Database? Upload CSV File here!</h2>
 <?php
     include 'db_connection.php';
     $conn = OpenCon();

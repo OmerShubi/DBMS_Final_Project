@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addDataFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/addDataFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertData.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertData.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="../../OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/.idea/dataSources.local.xml" />
@@ -55,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="198">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -64,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            <state relative-caret-position="282">
+              <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -76,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addDataFile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="105">
+              <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -86,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insertData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+            <state relative-caret-position="-18">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -103,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/displayTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
+            <state relative-caret-position="336">
               <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
             </state>
           </provider>
@@ -134,10 +135,10 @@
         <option value="$PROJECT_DIR$/temp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb522324-c87d-472c-bfa2-275644142c7b/console.sql" />
         <option value="$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/style.css" />
-        <option value="$PROJECT_DIR$/addDataFile.php" />
         <option value="$PROJECT_DIR$/displayTable.php" />
-        <option value="$PROJECT_DIR$/insertData.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/insertData.php" />
+        <option value="$PROJECT_DIR$/addDataFile.php" />
         <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
@@ -255,28 +256,7 @@
       <workItem from="1557249357850" duration="166000" />
       <workItem from="1557249525402" duration="713000" />
       <workItem from="1557250435998" duration="17388000" />
-      <workItem from="1557269673985" duration="4088000" />
-    </task>
-    <task id="LOCAL-00065" summary="style">
-      <created>1557261017392</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1557261017392</updated>
-    </task>
-    <task id="LOCAL-00066" summary="style">
-      <created>1557261323263</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1557261323263</updated>
-    </task>
-    <task id="LOCAL-00067" summary="favicon">
-      <created>1557261374075</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1557261374075</updated>
+      <workItem from="1557269673985" duration="5455000" />
     </task>
     <task id="LOCAL-00068" summary="favicon">
       <created>1557261498725</created>
@@ -600,11 +580,32 @@
       <option name="project" value="LOCAL" />
       <updated>1557273601698</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="iframe syling">
+      <created>1557273784358</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1557273784358</updated>
+    </task>
+    <task id="LOCAL-00115" summary="iframe styling">
+      <created>1557273965826</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1557273965826</updated>
+    </task>
+    <task id="LOCAL-00116" summary="iframe styling">
+      <created>1557274266697</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1557274266697</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34844000" />
+    <option name="totallyTimeSpent" value="36211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1613" height="873" extended-state="6" />
@@ -698,7 +699,8 @@
     <MESSAGE value="insertion form" />
     <MESSAGE value="iframe" />
     <MESSAGE value="iframe syling" />
-    <option name="LAST_COMMIT_MESSAGE" value="iframe syling" />
+    <MESSAGE value="iframe styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="iframe styling" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/contacts_table.sql" />
@@ -834,50 +836,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addDataFile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="198">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/displayTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        <state relative-caret-position="336">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/displayTable.php">
+    <entry file="file://$PROJECT_DIR$/addDataFile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="105">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/insertData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+        <state relative-caret-position="-18">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
         </state>
       </provider>
     </entry>
