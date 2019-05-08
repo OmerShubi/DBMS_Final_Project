@@ -6,7 +6,12 @@
 <body>
     <?php
         include 'db_connection.php';
+        // Open Connection
         $conn = OpenCon();
+
+
+        // Creates the table. If already exists the query sends back an error, but has no effect
+        // So continues program as expected.
         $sql = "create table PremierLeague(
                                       id int primary key,
                                       Home varchar(50),
@@ -17,9 +22,9 @@
                                       result varchar(1),
                                       season varchar(10)
                  );";
-
         sqlsrv_query($conn, $sql);
 
+        // Displays the Table
         $sql = "SELECT * FROM PremierLeague;" ;
 
         $result = sqlsrv_query($conn, $sql);
