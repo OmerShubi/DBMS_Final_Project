@@ -33,7 +33,7 @@
         ?>
     </select>
 
-    <table style="width: 40%; alignment: center">
+    <table id="insertion_table">
         <tr>
             <td>Result:</td>
         </tr>
@@ -47,10 +47,12 @@
             <td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
         <tr>
-            <td>Away Goals</td><td><input name="away_goals" type="range" step="1" min="0" max="10"></td>
+            <td><label for="Away Goals">Away Goals</label></td>
+            <td><input name="away_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
         <tr>
-            <td>Season*</td><td><input name="season" type="text" size="24" required></td>
+            <td><label for="season">Season*</label></td>
+            <td><input name="season" type="text" size="24" required></td>
         </tr>
         <tr>
             <td colspan="2"><textarea name="notes" Rows="5" cols="37">Write here a special note</textarea></td>

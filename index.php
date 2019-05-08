@@ -25,7 +25,7 @@
     </h3>
     <iframe name="MainFrame" src="displayTable.php"></iframe>
 
-<footer class="main">&copy; Copyright 2019 Ploznik & Shubi</footer>
+<footer style="color: white">&copy; Copyright 2019 Ploznik & Shubi</footer>
 </div>
 </body>
 </html>
