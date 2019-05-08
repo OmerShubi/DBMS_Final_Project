@@ -47,22 +47,19 @@
                 <input name="result" type="radio" value="D"><label for="D">D</label><br>
                 <input name="result" type="radio" value="A"><label for="A">A</label></td>
         </tr>
-        <tr>
+        <tr style="padding-bottom: 5px">
             <td><label for="home_goals">Home Goals</label></td>
             <td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
-        <tr><td colspan="2"></td></tr>
-        <tr>
+        <tr style="padding-bottom: 5px">
             <td><label for="away Goals">Away Goals</label></td>
             <td><input name="away_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
-        <tr><td colspan="2"></td></tr>
-        <tr>
+        <tr style="padding-bottom: 5px">
             <td><label for="season">Season*</label></td>
-            <td><input name="season" type="text" size="22" required></td>
+            <td><input name="season" type="text" size="24" required></td>
         </tr>
-        <tr><td colspan="2"></td></tr>
-        <tr>
+        <tr style="padding-bottom: 5px">
             <td colspan="2"><textarea name="notes" Rows="5" cols="36" placeholder="Write here a special note"></textarea></td>
         </tr>
         <tr>
