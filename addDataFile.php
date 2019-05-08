@@ -31,8 +31,20 @@
                 // Assuming first row stores column name --> skip insertion
                 $data = fgetcsv($handle, 1000, ",");
 
+                $sql = "SELECT COUNT(*) FROM PremierLeague";
+                $is_empty = sqlsrv_query($conn, $sql);
+                // Checks whether table is empty or not, to determine ID of next item
+                if($is_empty == 0){
+                    $counter = 1;
+                }
+                else {
+                    // Get last ID, increment by one and set as new ID
+                    $sql = "SELECT max(id) newID FROM PremierLeague";
+                    $IDtable = sqlsrv_query($conn, $sql);
+                    $row = sqlsrv_fetch_array($IDtable, SQLSRV_FETCH_ASSOC);
+                    $counter = $row['newID'] + 1;
+                }
                 // Insert data into database
-                $counter = 1; // Create auto incrementing id
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
                 {
                     $sql="INSERT INTO PremierLeague
