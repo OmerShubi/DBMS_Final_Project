@@ -21,7 +21,7 @@
         &nbsp;&nbsp;&nbsp;
         <a href="addDataFile.php" target="MainFrame">ADD DATA FILE</a>
         &nbsp;&nbsp;&nbsp;
-        <a href="insertData.php" target="MainFrame">INSERT DATA</a><br><br>
+        <a href="insertData.php" target="MainFrame">INSERT DATA</a><br>
     </h3>
     <iframe name="MainFrame" src="displayTable.php"></iframe>
     <br>
