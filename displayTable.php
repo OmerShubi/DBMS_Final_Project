@@ -7,11 +7,10 @@
 include 'db_connection.php';
 $conn = OpenCon();
 
-// In case of success
-
 $sql = "SELECT * FROM PremierLeague;" ;
 
 $result = sqlsrv_query($conn, $sql);
+
 echo '<table>';
 
 echo "<thead><tr><th>Match ID</th><th>Home</th><th>Away</th><th>Notes</th><th>Winner</th><th>Season</th><th>Game Goals</th></tr></thead>";

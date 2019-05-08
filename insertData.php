@@ -96,7 +96,10 @@
 
             // In case of failure
             if (!$result) {
-                die("Couldn't add the game specified.<br>");
+                die("Couldn't add the specified match.<br>");
+            }
+            else{
+                echo "Match Added";
             }
         }
     ?>
