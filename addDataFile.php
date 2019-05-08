@@ -45,7 +45,7 @@
 
                     // In case of failure
                     if (!$sql_result) {
-                        die("Couldn't add the specified match.<br>");
+                        die("<H3>UPLOAD FAILED</H3>");
                     }
                 }
                 fclose($handle);
