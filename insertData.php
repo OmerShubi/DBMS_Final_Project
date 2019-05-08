@@ -51,16 +51,18 @@
             <td><label for="home_goals">Home Goals</label></td>
             <td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
+        <tr></tr>
         <tr>
             <td><label for="Away Goals">Away Goals</label></td>
             <td><input name="away_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
+        <tr></tr>
         <tr>
             <td><label for="season">Season*</label></td>
-            <td><input name="season" type="text" size="24" required></td>
+            <td><input name="season" type="text" size="22" required></td>
         </tr>
         <tr>
-            <td colspan="2"><textarea name="notes" Rows="5" cols="37">Write here a special note</textarea></td>
+            <td colspan="2"><textarea name="notes" Rows="5" cols="40">Write here a special note</textarea></td>
         </tr>
         <tr>
             <td><input name="submit" type="submit" value="Add Result"></td>
