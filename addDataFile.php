@@ -52,6 +52,8 @@
             }
             echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL</h3>";
         }
+    /* Close the connection. */
+    sqlsrv_close( $conn);
     ?>
 </body>
 </html>

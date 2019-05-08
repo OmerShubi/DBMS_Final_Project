@@ -102,6 +102,8 @@
                 echo "<H3 style='color: darkgreen'>MATCH ADDED</H3>";
             }
         }
+    /* Close the connection. */
+    sqlsrv_close( $conn);
     ?>
 </body>
 </html>
