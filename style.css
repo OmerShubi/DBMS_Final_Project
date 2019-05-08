@@ -31,7 +31,7 @@ a:visited  {color:white}
 a:active   {color:yellow}
 a:hover    {color:blue}
 
-#main body {
+body.main {
     background: black url("background.jpg");
     width: auto;
     text-align: center;
@@ -41,7 +41,7 @@ a:hover    {color:blue}
 img {
 }
 
-#layer {
+.layer {
     background-color: rgba(255, 255, 255, 0.3);
     width: 80%;
 }
