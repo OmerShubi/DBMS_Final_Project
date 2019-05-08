@@ -1,4 +1,4 @@
-h1, h2, h3, form
+h1, h2, h3
 {
     font-family: Verdana, Geneva, sans-serif;
     color: white;
@@ -62,7 +62,7 @@ div {
 
 .insertion_table{
     background-color:white;
-    font-family:Tahoma, Geneva, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     color: black;
     border: none;
     text-align: left;
@@ -70,3 +70,7 @@ div {
     width:30%;
     margin-left:35%;
     margin-right:35%;}
+
+tr.insertion_table, td.insertion_table, th.insertion_table{
+    border: none;
+}

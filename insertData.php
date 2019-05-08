@@ -9,7 +9,7 @@
     include 'db_connection.php';
     $conn = OpenCon();
 ?>
-<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" style="text-align: center">
+<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
     <table class="insertion_table">
         <tr>
             <td><label for="Home">Home Team:</label></td>
