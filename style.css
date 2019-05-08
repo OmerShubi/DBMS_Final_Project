@@ -4,17 +4,30 @@ h1, h2, h3, h4, h5, form
     color: white;
 }
 
-p,li
+table
+{
+    background-color:white;
+    font-family:Tahoma, Geneva, sans-serif;
+    margin-left: 10pt;
+    color: black;
+    text-align: left;
+    word-spacing: normal;
+
+}
+
+th
 {
     font-family:Tahoma, Geneva, sans-serif;
     color: black;
     text-align: center;
     word-spacing: normal;
 }
-
-hr
+p,li,th,td
 {
-    color:white
+    font-family:Tahoma, Geneva, sans-serif;
+    color: black;
+    text-align: center;
+    word-spacing: normal;
 }
 
 iframe
@@ -37,9 +50,6 @@ body.main {
     text-align: center;
 }
 
-img {
-}
-
 .layer {
     background-color: rgba(255, 255, 255, 0.3);
     width: 80%;
@@ -48,33 +58,3 @@ img {
 div {
     margin: auto;
 }
-
-#fixed_headers{
-    table-layout: fixed;
-    border-collapse: collapse;
-    border: 1px solid black;
-    background-color:white;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family:Tahoma, Geneva, sans-serif;
-    color: black;
-    text-align: center;
-    word-spacing: normal;
-}
-
-
-#fixed_headers thead tr {
-    /*display: block;*/
-    /*position: relative;*/
-    border: 1px solid black;
-}
-
-#fixed_headers tbody{
-    /*display: block;*/
-    overflow: auto;
-    width: 100%;
-    height: 350px;
-    border: 1px solid black;
-}
-

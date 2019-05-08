@@ -1,6 +1,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Premier Pro Analytics | Table</title>
+
 </head>
 <?php
 include 'db_connection.php';
@@ -12,7 +14,7 @@ $sql = "SELECT * FROM PremierLeague;" ;
 
 $result = sqlsrv_query($conn, $sql);
 //echo '  <div id="table-scroll">';
-echo '<table id="fixed_headers">';
+echo '<table>';
 
 echo "<thead><tr><th>ID</th><th>Home</th><th>Away</th><th>Notes</th><th>Game Result</th><th>Season</th><th>Sum</th></tr></thead>";
 
