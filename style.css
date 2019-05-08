@@ -67,12 +67,12 @@ div {
     border: none;
     text-align: left;
     word-spacing: normal;
-    width:30%;
-    padding: 5px;
-    margin-left:35%;
-    margin-right:35%;}
+    width:26%;
+    padding: 10px;
+    margin-left:37%;
+    margin-right:37%;}
 
-table.insertion_table tr, table.insertion_table  td, table.insertion_table  th{
+table.insertion_table tr, table.insertion_table td, table.insertion_table th{
     border: 0;
     text-align: left;
 }
