@@ -6,8 +6,20 @@
 <body>
     <?php
         include 'db_connection.php';
-        createTable();
         $conn = OpenCon();
+        $sql = "create table PremierLeague(
+                                      id int primary key,
+                                      Home varchar(50),
+                                      Away varchar(50),
+                                      notes varchar(5000),
+                                      home_goals int,
+                                      away_goals int,
+                                      result varchar(1),
+                                      season varchar(10)
+                 );";
+
+        sqlsrv_query($conn, $sql);
+
         $sql = "SELECT * FROM PremierLeague;" ;
 
         $result = sqlsrv_query($conn, $sql);
