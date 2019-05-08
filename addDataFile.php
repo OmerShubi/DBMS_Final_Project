@@ -40,8 +40,13 @@
                     ('".addslashes($counter)."','".addslashes($data[0])."','".addslashes($data[1])."','"
                         .addslashes($data[2])."','".addslashes($data[3])."','".addslashes($data[4])."','"
                         .addslashes($data[5])."','".addslashes($data[6])."'); ";
-                    sqlsrv_query($conn, $sql);
+                    $sql_result = sqlsrv_query($conn, $sql);
                     $counter = $counter + 1;
+
+                    // In case of failure
+                    if (!$sql_result) {
+                        die("Couldn't add the specified match.<br>");
+                    }
                 }
                 fclose($handle);
             }
