@@ -6,11 +6,11 @@
     <link href="favicon.png" rel="icon" type="image/x-icon" />
 </head>
 
-<body class="main">
+<body id="main">
 
         <img src="banner.jpg" alt="Premier League Logo" style="width: 80%; border: 1px solid black">
 
-    <div class="layer" style="text-align: center">
+    <div id="layer" style="text-align: center">
 
     <h2>
             <br>Premier League Pro Analytics is an advanced Database & Analytics tool <br><br>

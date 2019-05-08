@@ -31,7 +31,7 @@ a:visited  {color:white}
 a:active   {color:yellow}
 a:hover    {color:blue}
 
-body.main {
+#main body {
     background: black url("background.jpg");
     width: auto;
     text-align: center;
@@ -41,7 +41,7 @@ body.main {
 img {
 }
 
-.layer {
+#layer {
     background-color: rgba(255, 255, 255, 0.3);
     width: 80%;
 }
@@ -60,12 +60,8 @@ div {
     margin-right: 5%;
     font-family:Tahoma, Geneva, sans-serif;
     color: black;
-    text-align: left;
-    word-spacing: normal;
-}
-
-#fixed_headers th {
     text-align: center;
+    word-spacing: normal;
 }
 
 #fixed_headers thead tr {
