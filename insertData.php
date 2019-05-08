@@ -43,7 +43,8 @@
                 <input name="result" type="radio" value="A"><label for="A">A</label></td>
         </tr>
         <tr>
-            <td>Home Goals</td><td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
+            <td><label for="home_goals">Home Goals</label></td>
+            <td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
         </tr>
         <tr>
             <td>Away Goals</td><td><input name="away_goals" type="range" step="1" min="0" max="10"></td>
