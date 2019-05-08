@@ -10,32 +10,35 @@
     $conn = OpenCon();
 ?>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" style="text-align: center">
-    Home Team:<select name="Home">
-        <option value="">Choose home team</option>
-        <?php
-            $sql = "SELECT * FROM PremierLeague";
-            $result = sqlsrv_query($conn, $sql);
-            while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
-            {
-                echo "<option value=".$row['Home'].">".addslashes($row['Home'])."</option>";
-            }
-        ?>
-    </select><br>
-    Away Team:<select name="Away">
-        <option value="">Choose away team</option>
-        <?php
-        $sql = "SELECT * FROM PremierLeague";
-        $result = sqlsrv_query($conn, $sql);
-        while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
-        {
-            echo "<option value=".$row['Away'].">".addslashes($row['Away'])."</option>";
-        }
-        ?>
-    </select>
-
     <table class="insertion_table">
         <tr>
-            <td>Result:</td>
+            <label for="Home">Home Team:</label><select name="Home">
+                <option value="">Choose home team</option>
+                <?php
+                    $sql = "SELECT * FROM PremierLeague";
+                    $result = sqlsrv_query($conn, $sql);
+                    while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
+                    {
+                        echo "<option value=".$row['Home'].">".addslashes($row['Home'])."</option>";
+                    }
+                ?>
+            </select>
+        </tr>
+        <tr>
+            <label for="Away">Away Team:</label><select name="Away">
+                <option value="">Choose away team</option>
+                <?php
+                $sql = "SELECT * FROM PremierLeague";
+                $result = sqlsrv_query($conn, $sql);
+                while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
+                {
+                    echo "<option value=".$row['Away'].">".addslashes($row['Away'])."</option>";
+                }
+                ?>
+            </select>
+        </tr>
+        <tr>
+            <td><label for="result">Result:</label></td>
         </tr>
         <tr>
             <td><input name="result" type="radio" value="H"><label for="H">H</label><br>
