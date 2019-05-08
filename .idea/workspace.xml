@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertData.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addDataFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/addDataFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <ignored path="../../OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/.idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,26 +55,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addDataFile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            <state relative-caret-position="588">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+              <folding>
+                <element signature="e#937#943#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addDataFile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+              <folding>
+                <element signature="n#style#0;n#H3#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insertData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="-355">
+              <caret line="63" column="87" selection-start-line="63" selection-start-column="87" selection-end-line="63" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -134,12 +142,12 @@
         <option value="$PROJECT_DIR$/temp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb522324-c87d-472c-bfa2-275644142c7b/console.sql" />
         <option value="$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/style.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/displayTable.php" />
         <option value="$PROJECT_DIR$/db_connection.php" />
-        <option value="$PROJECT_DIR$/addDataFile.php" />
         <option value="$PROJECT_DIR$/insertData.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/addDataFile.php" />
       </list>
     </option>
   </component>
@@ -262,21 +270,7 @@
       <workItem from="1557249525402" duration="713000" />
       <workItem from="1557250435998" duration="17388000" />
       <workItem from="1557269673985" duration="10826000" />
-      <workItem from="1557306563198" duration="2261000" />
-    </task>
-    <task id="LOCAL-00095" summary="iframe">
-      <created>1557267661059</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1557267661059</updated>
-    </task>
-    <task id="LOCAL-00096" summary="iframe">
-      <created>1557267685745</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1557267685745</updated>
+      <workItem from="1557306563198" duration="2814000" />
     </task>
     <task id="LOCAL-00097" summary="iframe">
       <created>1557267782131</created>
@@ -607,11 +601,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557311447757</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Feedback">
+      <created>1557311728390</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1557311728390</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Feedback">
+      <created>1557311964621</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1557311964621</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43843000" />
+    <option name="totallyTimeSpent" value="44396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1613" height="873" extended-state="6" />
@@ -835,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/displayTable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -870,17 +871,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addDataFile.php">
+    <entry file="file://$PROJECT_DIR$/insertData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="-355">
+          <caret line="63" column="87" selection-start-line="63" selection-start-column="87" selection-end-line="63" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/insertData.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="588">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="e#937#943#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addDataFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#H3#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

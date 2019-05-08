@@ -96,10 +96,10 @@
 
             // In case of failure
             if (!$result) {
-                die("Couldn't add the specified match.<br>");
+                die("<h3 style='color:darkred;'>UPLOAD FAILED</h3>");
             }
             else{
-                echo "<H3>MATCH ADDED</H3>";
+                echo "<H3 style='color: darkgreen'>MATCH ADDED</H3>";
             }
         }
     ?>

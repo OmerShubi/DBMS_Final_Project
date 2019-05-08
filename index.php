@@ -26,7 +26,7 @@
     <iframe name="MainFrame" src="displayTable.php"></iframe>
     <br>
 
-<footer style="color: white">&copy; COPYRIGHT 2019 | PLOZNIK & SHUBI</footer>
+<footer style="color: white"><br>&copy; COPYRIGHT 2019 | PLOZNIK & SHUBI</footer>
 </div>
 </body>
 </html>

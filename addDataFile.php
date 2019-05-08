@@ -17,7 +17,7 @@
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
 
         <input name="csv" type="file" id="csv" />
-        <input type="submit" name="submit" value="submit" />
+        <input type="submit" name="submit" value="Upload" />
 
     </form>
 
@@ -45,12 +45,12 @@
 
                     // In case of failure
                     if (!$sql_result) {
-                        die("<H3>UPLOAD FAILED</H3>");
+                        die("<H3 style='color: darkred'>UPLOAD FAILED</H3>");
                     }
                 }
                 fclose($handle);
             }
-            echo"<h3>UPLOAD SUCCESSFUL</h3>";
+            echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL</h3>";
         }
     ?>
 </body>
