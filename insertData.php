@@ -33,7 +33,7 @@
         ?>
     </select>
 
-    <table style="width: 40%">
+    <table style="width: 40%; align-content: center">
         <tr>
             <td>Result:</td>
         </tr>
