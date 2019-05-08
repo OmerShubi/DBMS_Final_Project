@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, form
+h1, h2, h3, form
 {
     font-family: Verdana, Geneva, sans-serif;
     color: white;
@@ -17,19 +17,14 @@ table
     margin-right:5%;
 }
 
-th
+th,td
 {
     font-family:Tahoma, Geneva, sans-serif;
     color: black;
     text-align: center;
     word-spacing: normal;
-}
-p,li,th,td
-{
-    font-family:Tahoma, Geneva, sans-serif;
-    color: black;
-    text-align: center;
-    word-spacing: normal;
+    border: 1px solid black;
+
 }
 
 iframe
