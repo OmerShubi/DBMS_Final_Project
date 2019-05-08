@@ -33,7 +33,7 @@
         ?>
     </select>
 
-    <table id="insertion_table">
+    <table class="insertion_table">
         <tr>
             <td>Result:</td>
         </tr>
