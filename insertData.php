@@ -12,7 +12,8 @@
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" style="text-align: center">
     <table class="insertion_table">
         <tr>
-            <label for="Home">Home Team:</label><select name="Home">
+            <td><label for="Home">Home Team:</label></td>
+            <td><select name="Home">
                 <option value="">Choose home team</option>
                 <?php
                     $sql = "SELECT * FROM PremierLeague";
@@ -22,10 +23,11 @@
                         echo "<option value=".$row['Home'].">".addslashes($row['Home'])."</option>";
                     }
                 ?>
-            </select>
+            </select></td>
         </tr>
         <tr>
-            <label for="Away">Away Team:</label><select name="Away">
+            <td><label for="Away">Away Team:</label></td>
+            <td><select name="Away">
                 <option value="">Choose away team</option>
                 <?php
                 $sql = "SELECT * FROM PremierLeague";
@@ -35,7 +37,7 @@
                     echo "<option value=".$row['Away'].">".addslashes($row['Away'])."</option>";
                 }
                 ?>
-            </select>
+            </select></td>
         </tr>
         <tr>
             <td><label for="result">Result:</label></td>
