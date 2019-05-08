@@ -33,12 +33,14 @@
         ?>
     </select>
 
-    <table style="width: 40%; align-content: center">
+    <table style="width: 40%; alignment: center">
         <tr>
             <td>Result:</td>
         </tr>
         <tr>
-            <td><input name="result" type="radio" value="H">H<br><input name="result" type="radio" value="D">D<br><input name="result" type="radio" value="A">A</td>
+            <td><input name="result" type="radio" value="H"><label for="H">H</label><br>
+                <input name="result" type="radio" value="D"><label for="D">D</label><br>
+                <input name="result" type="radio" value="A"><label for="A">A</label></td>
         </tr>
         <tr>
             <td>Home Goals</td><td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
