@@ -45,7 +45,7 @@
 
                     // In case of failure
                     if (!$sql_result) {
-                        die("<H3 style='color: darkred'>UPLOAD FAILED</H3>");
+                        die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV of correct format)</H3>");
                     }
                 }
                 fclose($handle);

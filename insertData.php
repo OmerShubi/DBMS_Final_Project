@@ -86,7 +86,7 @@
             $row = sqlsrv_fetch_array($IDtable, SQLSRV_FETCH_ASSOC);
             $id = $row['newID'] + 1;
 
-            // Verify goals are of type
+            // Insert data into database
             $sql = "INSERT INTO PremierLeague (id, Home, Away, notes, home_goals, away_goals, result, season) VALUES
                    ('".addslashes($id)."','".addslashes($_POST['Home'])."','".addslashes($_POST['Away'])."'
                    ,'".addslashes($_POST['notes'])."','".addslashes($_POST['home_goals'])."','".addslashes($_POST['away_goals'])."'
