@@ -24,7 +24,9 @@ th,td
     text-align: center;
     word-spacing: normal;
     border: 1px solid black;
-
+}
+th{
+    padding: 5px;
 }
 
 iframe
@@ -50,6 +52,7 @@ body.main {
 .layer {
     background-color: rgba(255, 255, 255, 0.3);
     width: 80%;
+    height: auto;
 }
 
 div {
