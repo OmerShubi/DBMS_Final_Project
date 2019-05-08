@@ -71,7 +71,7 @@ div {
     margin-left:35%;
     margin-right:35%;}
 
-tr.insertion_table, td.insertion_table, th.insertion_table{
+table.insertion_table tr, table.insertion_table  td, table.insertion_table  th{
     border: 0;
     text-align: left;
 }
