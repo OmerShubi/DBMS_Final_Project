@@ -25,7 +25,7 @@
     <?php
         if (isset($_POST["submit"]))
         {
-            $file = $_FILES[csv][tmp_name];
+            $file = $_FILES['csv']['tmp_name'];
             if (($handle = fopen($file, "r")) !== FALSE)
             {
                 // Assuming first row stores column name --> skip insertion

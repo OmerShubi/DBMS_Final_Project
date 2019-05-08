@@ -19,56 +19,74 @@
         <table class="insertion_table">
             <tr>
                 <td><label for="Home">Home Team:</label></td>
-                <td><select name="Home">
-                    <option value="">Choose home team</option>
-                    <?php
-                        // Dynamically display Teams in dropdown list
-                        $sql = "SELECT Home FROM PremierLeague";
-                        $result = sqlsrv_query($conn, $sql);
-                        while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
-                        {
-                            echo "<option value=".$row['Home'].">".addslashes($row['Home'])."</option>";
-                        }
-                    ?>
-                </select></td>
+                <td><label>
+                        <select name="Home">
+                            <option value="">Choose home team</option>
+                            <?php
+                                // Dynamically display Teams in dropdown list
+                                $sql = "SELECT Home FROM PremierLeague";
+                                $result = sqlsrv_query($conn, $sql);
+                                while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
+                                {
+                                    echo "<option value=".$row['Home'].">".addslashes($row['Home'])."</option>";
+                                }
+                            ?>
+                        </select>
+                    </label></td>
             </tr>
             <tr>
                 <td><label for="Away">Away Team:</label></td>
-                <td><select name="Away">
-                    <option value="">Choose away team</option>
-                    <?php
-                    // Dynamically display Teams in dropdown list
-                        $sql = "SELECT Away FROM PremierLeague";
-                        $result = sqlsrv_query($conn, $sql);
-                        while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
-                        {
-                            echo "<option value=".$row['Away'].">".addslashes($row['Away'])."</option>";
-                        }
-                    ?>
-                    </select></td>
+                <td><label>
+                        <select name="Away">
+                            <option value="">Choose away team</option>
+                            <?php
+                            // Dynamically display Teams in dropdown list
+                                $sql = "SELECT Away FROM PremierLeague";
+                                $result = sqlsrv_query($conn, $sql);
+                                while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
+                                {
+                                    echo "<option value=".$row['Away'].">".addslashes($row['Away'])."</option>";
+                                }
+                            ?>
+                            </select>
+                    </label></td>
             </tr>
             <tr>
                 <td><label for="result">Result:</label></td>
             </tr>
             <tr>
-                <td><input name="result" type="radio" value="H"><label for="H">H</label><br>
-                    <input name="result" type="radio" value="D"><label for="D">D</label><br>
-                    <input name="result" type="radio" value="A"><label for="A">A</label></td>
+                <td><label>
+                        <input name="result" type="radio" value="H">
+                    </label><label for="H">H</label><br>
+                    <label>
+                        <input name="result" type="radio" value="D">
+                    </label><label for="D">D</label><br>
+                    <label>
+                        <input name="result" type="radio" value="A">
+                    </label><label for="A">A</label></td>
             </tr>
             <tr style="padding-bottom: 5px">
                 <td><label for="home_goals">Home Goals</label></td>
-                <td>0<input name="home_goals" type="range" step="1" min="0" max="10">10</td>
+                <td>0<label>
+                        <input name="home_goals" type="range" step="1" min="0" max="10">
+                    </label>10</td>
             </tr>
             <tr style="padding-bottom: 5px">
                 <td><label for="away Goals">Away Goals</label></td>
-                <td>0<input name="away_goals" type="range" step="1" min="0" max="10">10</td>
+                <td>0<label>
+                        <input name="away_goals" type="range" step="1" min="0" max="10">
+                    </label>10</td>
             </tr>
             <tr style="padding-bottom: 5px">
                 <td><label for="season">Season*</label></td>
-                <td><input name="season" type="text" size="24" required></td>
+                <td><label>
+                        <input name="season" type="text" size="24" required>
+                    </label></td>
             </tr>
             <tr style="padding-bottom: 5px">
-                <td colspan="2"><textarea name="notes" Rows="5" cols="36" placeholder="Write here a special note"></textarea></td>
+                <td colspan="2"><label>
+                        <textarea name="notes" Rows="5" cols="36" placeholder="Write here a special note"></textarea>
+                    </label></td>
             </tr>
             <tr>
                 <td><input name="submit" type="submit" value="Add Result"></td>
