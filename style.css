@@ -35,7 +35,6 @@ body.main {
     background: black url("background.jpg");
     width: auto;
     text-align: center;
-
 }
 
 img {
@@ -67,6 +66,7 @@ div {
 #fixed_headers thead tr {
     display: block;
     position: relative;
+    border: 1px solid black;
 }
 
 #fixed_headers tbody{
@@ -74,5 +74,6 @@ div {
     overflow: auto;
     width: 100%;
     height: 350px;
+    border: 1px solid black;
 }
 
