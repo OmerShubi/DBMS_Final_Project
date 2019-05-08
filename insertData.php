@@ -57,11 +57,11 @@
             </tr>
             <tr style="padding-bottom: 5px">
                 <td><label for="home_goals">Home Goals</label></td>
-                <td><input name="home_goals" type="range" step="1" min="0" max="10"></td>
+                <td>0<input name="home_goals" type="range" step="1" min="0" max="10">10</td>
             </tr>
             <tr style="padding-bottom: 5px">
                 <td><label for="away Goals">Away Goals</label></td>
-                <td><input name="away_goals" type="range" step="1" min="0" max="10"></td>
+                <td>0<input name="away_goals" type="range" step="1" min="0" max="10">10</td>
             </tr>
             <tr style="padding-bottom: 5px">
                 <td><label for="season">Season*</label></td>
@@ -86,7 +86,7 @@
             $row = sqlsrv_fetch_array($IDtable, SQLSRV_FETCH_ASSOC);
             $id = $row['newID'] + 1;
 
-            // Insert data into PremierLeague table
+            // Verify goals are of type
             $sql = "INSERT INTO PremierLeague (id, Home, Away, notes, home_goals, away_goals, result, season) VALUES
                    ('".addslashes($id)."','".addslashes($_POST['Home'])."','".addslashes($_POST['Away'])."'
                    ,'".addslashes($_POST['notes'])."','".addslashes($_POST['home_goals'])."','".addslashes($_POST['away_goals'])."'
