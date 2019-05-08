@@ -24,6 +24,7 @@
         <a href="insertData.php" target="MainFrame">INSERT DATA</a><br><br>
     </h3>
     <iframe name="MainFrame" src="displayTable.php"></iframe>
+    <br>
 
 <footer style="color: white">&copy; Copyright 2019 Ploznik & Shubi</footer>
 </div>

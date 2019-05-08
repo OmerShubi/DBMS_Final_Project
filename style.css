@@ -72,5 +72,6 @@ div {
     margin-right:35%;}
 
 tr.insertion_table, td.insertion_table, th.insertion_table{
-    border: none;
+    border: 0;
+    text-align: left;
 }
