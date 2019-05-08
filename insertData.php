@@ -99,7 +99,7 @@
                 die("Couldn't add the specified match.<br>");
             }
             else{
-                echo "Match Added";
+                echo "<H3>MATCH ADDED</H3>";
             }
         }
     ?>

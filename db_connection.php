@@ -16,4 +16,3 @@ function OpenCon()
     //echo "connected to DB"; //debug
     return $conn;
 }
-?>

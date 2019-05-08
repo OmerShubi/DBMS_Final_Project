@@ -45,6 +45,7 @@
                 }
                 fclose($handle);
             }
+            echo"<h3>UPLOAD SUCCESSFUL</h3>";
         }
     ?>
 </body>
