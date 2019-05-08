@@ -110,10 +110,10 @@
                    ,'".addslashes($_POST['notes'])."','".addslashes($_POST['home_goals'])."','".addslashes($_POST['away_goals'])."'
                    ,'".addslashes($_POST['result'])."','".addslashes($_POST['season'])."');";
 
-            $result = sqlsrv_query($conn, $sql);
+            $sql_result = sqlsrv_query($conn, $sql);
 
             // In case of failure
-            if (!$result) {
+            if (!$sql_result) {
                 die("<h3 style='color:darkred;'>UPLOAD FAILED<br>(Season should be max 10 characters)</h3>");
             }
             else{
