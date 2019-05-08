@@ -2,7 +2,6 @@
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Premier Pro Analytics | Table</title>
-
 </head>
 <?php
 include 'db_connection.php';

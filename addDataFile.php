@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Premier Pro Analytics | File</title>
 </head>
 <body style="text-align:center">
 <h2 style="font-size:20px;color:white">Whole new Database? Upload CSV File here!</h2>

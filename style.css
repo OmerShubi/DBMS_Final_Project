@@ -35,7 +35,7 @@ iframe
     padding: 0;
     border: none;
     width: 100%;
-    max-height: 60vh;
+    max-height: 350px;
 }
 
 a:link {font-family: Tahoma, Geneva, sans-serif ; color:white}

@@ -26,5 +26,6 @@
     <iframe name="MainFrame" src="displayTable.php"></iframe>
 
 </div>
+<footer>&copy; Copyright 2019 Ploznik & Shubi</footer>
 </body>
 </html>

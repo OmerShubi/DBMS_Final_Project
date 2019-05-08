@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Premier Pro Analytics | Insert</title>
 </head>
 <body style="text-align:center">
 <h2 style="font-size:20px;color:white">Another game played? Add it here!</h2>
@@ -32,7 +33,7 @@
         ?>
     </select>
 
-    <table border="0" cellpadding="5">
+    <table style="width: 40%">
         <tr>
             <td>Result:</td>
         </tr>
