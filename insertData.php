@@ -24,7 +24,7 @@
                             <option value="">Choose home team</option>
                             <?php
                                 // Dynamically display Teams in dropdown list
-                                $sql = "(SELECT Home FROM PremierLeague) UNION (SELECT Away FROM PremierLeague) as Teams";
+                                $sql = "(SELECT Home FROM PremierLeague) UNION (SELECT Away FROM PremierLeague) Teams Order By Teams";
                                 $result = sqlsrv_query($conn, $sql);
                                 while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
                                 {
@@ -41,7 +41,7 @@
                             <option value="">Choose away team</option>
                             <?php
                             // Dynamically display Teams in dropdown list
-                            $sql = "(SELECT Home FROM PremierLeague) UNION (SELECT Away FROM PremierLeague) as Teams";
+                            $sql = "(SELECT Home FROM PremierLeague) UNION (SELECT Away FROM PremierLeague) Teams Order By Teams";
                                 $result = sqlsrv_query($conn, $sql);
                                 while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
                                 {

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bb522324-c87d-472c-bfa2-275644142c7b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bb522324-c87d-472c-bfa2-275644142c7b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bb522324-c87d-472c-bfa2-275644142c7b/storage_v2/_src_/database/shubi.B5mFBg/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bb522324-c87d-472c-bfa2-275644142c7b/storage_v2/_src_/database/shubi.B5mFBg/schema/dbo.sYMBAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/insertData.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertData.php" afterDir="false" />
     </list>
     <ignored path="../../OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/.idea/dataSources.local.xml" />
@@ -58,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/insertData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="27" column="68" lean-forward="true" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+            <state relative-caret-position="639">
+              <caret line="47" column="98" selection-start-line="47" selection-start-column="98" selection-end-line="47" selection-end-column="98" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#H3#0;n#!!top" expanded="true" />
@@ -217,14 +214,7 @@
       <workItem from="1557306563198" duration="8454000" />
       <workItem from="1557323717654" duration="1081000" />
       <workItem from="1557329632504" duration="1467000" />
-      <workItem from="1557383571641" duration="552000" />
-    </task>
-    <task id="LOCAL-00113" summary="iframe syling">
-      <created>1557273601698</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1557273601698</updated>
+      <workItem from="1557383571641" duration="817000" />
     </task>
     <task id="LOCAL-00114" summary="iframe syling">
       <created>1557273784358</created>
@@ -562,11 +552,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557330627313</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="home and awat teams full option list">
+      <created>1557384149323</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1557384149324</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53136000" />
+    <option name="totallyTimeSpent" value="53401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -650,7 +647,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&#10;Init" />
     <MESSAGE value="&#10;should work" />
     <MESSAGE value="Start of HW2 - Title &amp; image addition" />
     <MESSAGE value="text add" />
@@ -675,7 +671,8 @@
     <MESSAGE value="Create table if doesnt exist" />
     <MESSAGE value="Complete" />
     <MESSAGE value="Allows adding additonal files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allows adding additonal files" />
+    <MESSAGE value="home and awat teams full option list" />
+    <option name="LAST_COMMIT_MESSAGE" value="home and awat teams full option list" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/contacts_table.sql" />
@@ -843,8 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/insertData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="27" column="68" lean-forward="true" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+        <state relative-caret-position="639">
+          <caret line="47" column="98" selection-start-line="47" selection-start-column="98" selection-end-line="47" selection-end-column="98" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#H3#0;n#!!top" expanded="true" />
