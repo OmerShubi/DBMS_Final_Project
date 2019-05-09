@@ -24,11 +24,11 @@
                             <option value="">Choose home team</option>
                             <?php
                                 // Dynamically display Teams in dropdown list
-                                $sql = "(SELECT Home FROM PremierLeague) UNION (SELECT Away FROM PremierLeague)";
+                                $sql = "(SELECT Home FROM PremierLeague) UNION (SELECT Away FROM PremierLeague) as Teams";
                                 $result = sqlsrv_query($conn, $sql);
                                 while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
                                 {
-                                    echo "<option value=".$row['Home'].">".addslashes($row['Home'])."</option>";
+                                    echo "<option value=".$row['Teams'].">".addslashes($row['Teams'])."</option>";
                                 }
                             ?>
                         </select>
@@ -41,11 +41,11 @@
                             <option value="">Choose away team</option>
                             <?php
                             // Dynamically display Teams in dropdown list
-                            $sql = "(SELECT Home FROM PremierLeague) UNION (SELECT Away FROM PremierLeague)";
+                            $sql = "(SELECT Home FROM PremierLeague) UNION (SELECT Away FROM PremierLeague) as Teams";
                                 $result = sqlsrv_query($conn, $sql);
                                 while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
                                 {
-                                    echo "<option value=".$row['Away'].">".addslashes($row['Away'])."</option>";
+                                    echo "<option value=".$row['Teams'].">".addslashes($row['Teams'])."</option>";
                                 }
                             ?>
                             </select>
