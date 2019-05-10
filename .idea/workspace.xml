@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="home and awat teams full option list">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertData.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertData.php" afterDir="false" />
-    </list>
+    <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="" />
     <ignored path="../../OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/.idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,28 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" selection-start-line="29" selection-end-line="32" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/insertData.php">
+        <entry file="file://$PROJECT_DIR$/displayTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="45" column="82" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="82" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#H3#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="324">
+              <caret line="45" column="155" selection-start-line="45" selection-start-column="155" selection-end-line="45" selection-end-column="155" />
             </state>
           </provider>
         </entry>
@@ -102,10 +82,10 @@
         <option value="$PROJECT_DIR$/db_connection.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/createTable.php" />
-        <option value="$PROJECT_DIR$/displayTable.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/addDataFile.php" />
         <option value="$PROJECT_DIR$/insertData.php" />
+        <option value="$PROJECT_DIR$/displayTable.php" />
       </list>
     </option>
   </component>
@@ -219,21 +199,7 @@
       <workItem from="1557306563198" duration="8454000" />
       <workItem from="1557323717654" duration="1081000" />
       <workItem from="1557329632504" duration="1467000" />
-      <workItem from="1557383571641" duration="2179000" />
-    </task>
-    <task id="LOCAL-00116" summary="iframe styling">
-      <created>1557274266697</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1557274266697</updated>
-    </task>
-    <task id="LOCAL-00117" summary="iframe styling">
-      <created>1557275176232</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1557275176232</updated>
+      <workItem from="1557383571641" duration="4195000" />
     </task>
     <task id="LOCAL-00118" summary="iframe styling">
       <created>1557275714806</created>
@@ -564,11 +530,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557384544746</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="home and away teams full option list">
+      <created>1557431211067</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1557431211067</updated>
+    </task>
+    <task id="LOCAL-00166" summary="Change Table order">
+      <created>1557497197231</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1557497197231</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54763000" />
+    <option name="totallyTimeSpent" value="56779000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -599,9 +579,9 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49967846" weight="0.32974428" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50032157" side_tool="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49967846" weight="0.3257066" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49967846" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49967846" weight="0.32974428" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="14" />
-      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32974428" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" visible="true" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -652,8 +632,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&#10;should work" />
-    <MESSAGE value="Start of HW2 - Title &amp; image addition" />
     <MESSAGE value="text add" />
     <MESSAGE value="store db connection in new file" />
     <MESSAGE value="added style.css" />
@@ -677,7 +655,9 @@
     <MESSAGE value="Complete" />
     <MESSAGE value="Allows adding additonal files" />
     <MESSAGE value="home and awat teams full option list" />
-    <option name="LAST_COMMIT_MESSAGE" value="home and awat teams full option list" />
+    <MESSAGE value="home and away teams full option list" />
+    <MESSAGE value="Change Table order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Table order" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/contacts_table.sql" />
@@ -804,13 +784,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/createTable.php" />
-    <entry file="file://$PROJECT_DIR$/displayTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addDataFile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -836,10 +809,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/insertData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#H3#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" selection-start-line="29" selection-end-line="32" selection-end-column="7" />
+        <state relative-caret-position="147">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -847,14 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/insertData.php">
+    <entry file="file://$PROJECT_DIR$/displayTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="45" column="82" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#H3#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="45" column="155" selection-start-line="45" selection-start-column="155" selection-end-line="45" selection-end-column="155" />
         </state>
       </provider>
     </entry>
