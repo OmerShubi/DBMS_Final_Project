@@ -1,4 +1,5 @@
 <!--  *** Technion Account used: shubi ***  -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,7 +12,7 @@
 
 <img src="banner.jpg" alt="Premier League Logo" style="width: 80%; border: 1px solid black">
 
-<div class="layer" style="text-align: center">
+<div class="layer">
 
     <h2>
         <br>Premier League Pro Analytics is an advanced Database & Analytics tool <br><br>
