@@ -16,7 +16,7 @@
 <!--    File Selection   -->
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
 
-        <input name="csv" type="file" id="csv" />
+        <input name="csv" type="file" id="csv" accept=".csv" />
         <input type="submit" name="submit" value="Upload" />
 
     </form>
