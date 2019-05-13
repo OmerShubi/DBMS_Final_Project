@@ -19,9 +19,10 @@
     </h1>
    <div style="background-color: rgba(255,255,255,0.7)">
        <h2  style="color: #2e0e6b; vertical-align: center">
-           <i>for Professionals by Professionals.</i><br><br>
+           <i>for Professionals by Professionals.</i>
        </h2>
    </div>
+    <br>
 <h3>
         <a href="displayTable.php" target="MainFrame">DISPLAY TABLE</a>
         &nbsp;&nbsp;&nbsp;
