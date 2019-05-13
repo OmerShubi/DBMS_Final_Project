@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="">
+    <list default="true" id="ce0c251d-ddd1-4f26-b0ca-cbeccdc63ba7" name="Default Changelist" comment="only csv file accepted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="../../OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/.idea/dataSources.local.xml" />
@@ -70,15 +70,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addDataFile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-              <folding>
-                <element signature="n#style#0;n#H3#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_connection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://bb522324-c87d-472c-bfa2-275644142c7b/database/shubi/schema/dbo/table/PremierLeague">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -112,13 +126,13 @@
         <option value="$PROJECT_DIR$/temp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb522324-c87d-472c-bfa2-275644142c7b/console.sql" />
         <option value="$USER_HOME$/OneDrive - Technion/Spring 2019/Database Management 094241/HTML_Tut1/style.css" />
-        <option value="$PROJECT_DIR$/db_connection.php" />
         <option value="$PROJECT_DIR$/createTable.php" />
-        <option value="$PROJECT_DIR$/addDataFile.php" />
         <option value="$PROJECT_DIR$/insertData.php" />
         <option value="$PROJECT_DIR$/displayTable.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/db_connection.php" />
+        <option value="$PROJECT_DIR$/addDataFile.php" />
       </list>
     </option>
   </component>
@@ -136,6 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,7 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,14 +247,8 @@
       <workItem from="1557323717654" duration="1081000" />
       <workItem from="1557329632504" duration="1467000" />
       <workItem from="1557383571641" duration="4999000" />
-      <workItem from="1557649458697" duration="683000" />
-    </task>
-    <task id="LOCAL-00120" summary="iframe styling">
-      <created>1557275944999</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1557275944999</updated>
+      <workItem from="1557649458697" duration="1860000" />
+      <workItem from="1557651764931" duration="44000" />
     </task>
     <task id="LOCAL-00121" summary="iframe styling">
       <created>1557276031277</created>
@@ -578,11 +586,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557499134856</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="only csv file accepted">
+      <created>1557650566196</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1557650566196</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58266000" />
+    <option name="totallyTimeSpent" value="59487000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,7 +612,7 @@
     <frame x="-6" y="-6" width="1613" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16205788" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16398714" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -619,7 +634,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.21672025" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.21672025" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +681,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added style.css" />
     <MESSAGE value="Replaced image and align text" />
     <MESSAGE value="update text" />
     <MESSAGE value="bg image" />
@@ -691,7 +705,8 @@
     <MESSAGE value="Change Table order" />
     <MESSAGE value="Compressed Images" />
     <MESSAGE value="Added DOCTYPE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DOCTYPE" />
+    <MESSAGE value="only csv file accepted" />
+    <option name="LAST_COMMIT_MESSAGE" value="only csv file accepted" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/contacts_table.sql" />
@@ -810,21 +825,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db_connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/createTable.php" />
-    <entry file="das://bb522324-c87d-472c-bfa2-275644142c7b/database/shubi/schema/dbo/table/PremierLeague">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/insertData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -857,14 +858,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addDataFile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#H3#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bb522324-c87d-472c-bfa2-275644142c7b/database/shubi/schema/dbo/table/PremierLeague">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

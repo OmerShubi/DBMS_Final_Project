@@ -14,11 +14,15 @@
 
 <div class="layer">
 
-    <h2>
-        <br>Premier League Pro Analytics is an advanced Database & Analytics tool <br><br>
-        <i>for Professionals by Professionals (not newbies)!</i><br><br>
-    </h2>
-    <h3>
+    <h1>
+        <br>Premier Pro Analytics is an advanced Database & Analytics tool <br><br>
+    </h1>
+   <div>
+       <h2>
+           <i>for Professionals by Professionals.</i><br><br>
+       </h2>
+   </div>
+<h3>
         <a href="displayTable.php" target="MainFrame">DISPLAY TABLE</a>
         &nbsp;&nbsp;&nbsp;
         <a href="addDataFile.php" target="MainFrame">ADD DATA FILE</a>
