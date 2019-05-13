@@ -22,7 +22,6 @@
            <i>for Professionals by Professionals.</i>
        </h2>
    </div>
-    <br>
 <h3>
         <a href="displayTable.php" target="MainFrame">DISPLAY TABLE</a>
         &nbsp;&nbsp;&nbsp;
