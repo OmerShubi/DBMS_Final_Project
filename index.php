@@ -17,8 +17,8 @@
     <h1>
         <br>Premier Pro Analytics is an advanced Database & Analytics tool <br><br>
     </h1>
-   <div style="background-color: rgba(255,255,255,0.7)">
-       <h2 style="color: #2e0e6b">
+   <div style="background-color: rgba(255,255,255,0.7); color: #2e0e6b; text-align: center">
+       <h2>
            <i>for Professionals by Professionals.</i><br><br>
        </h2>
    </div>
