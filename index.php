@@ -15,7 +15,7 @@
 <div class="layer">
 
     <h1>
-        <br>Premier Pro Analytics is an advanced Database & Analytics tool <br><br>
+        <br>Premier Pro Analytics is an advanced Database & Analytics tool <br>
     </h1>
    <div style="background-color: rgba(255,255,255,0.7)">
        <h2  style="color: #2e0e6b; vertical-align: center">
