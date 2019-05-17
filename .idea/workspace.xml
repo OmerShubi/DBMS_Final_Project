@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="231">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -233,6 +233,8 @@
       <workItem from="1557651764931" duration="44000" />
       <workItem from="1557747055739" duration="1104000" />
       <workItem from="1557835021259" duration="1333000" />
+      <workItem from="1557843099408" duration="275000" />
+      <workItem from="1558124840207" duration="515000" />
     </task>
     <task id="LOCAL-00129" summary="General styling">
       <created>1557277810733</created>
@@ -581,7 +583,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61924000" />
+    <option name="totallyTimeSpent" value="62714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,7 +598,7 @@
     <frame x="-6" y="-6" width="1613" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16784567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17170417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -610,8 +612,8 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" sideWeight="0.49967846" weight="0.32974428" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49967846" weight="0.32974428" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.50032157" side_tool="true" visible="true" weight="0.32974428" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49967846" weight="0.3257066" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016077" side_tool="true" visible="true" weight="0.3257066" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" sideWeight="0.49839228" visible="true" weight="0.3257066" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49967846" weight="0.32974428" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="14" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32974428" />
@@ -837,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="231">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
