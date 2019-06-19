@@ -1,3 +1,4 @@
+<?php
 CREATE TABLE Trek(
   trekName      VARCHAR(20) PRIMARY KEY,
   length        FLOAT,
@@ -30,5 +31,6 @@ CREATE TABLE HikerInTrek(
   FOREIGN KEY (hikerID) REFERENCES Hiker(ID) ON DELETE CASCADE,
   FOREIGN KEY (trekName) REFERENCES Trek ON DELETE CASCADE
 )
+>
 
 

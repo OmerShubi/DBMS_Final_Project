@@ -17,7 +17,7 @@
         sqlsrv_query($conn, $sql);
 
         // Displays the Table
-        $sql = "SELECT * FROM PremierLeague;" ;
+        //$sql = "SELECT * FROM PremierLeague;" ;
 
         $result = sqlsrv_query($conn, $sql);
 
