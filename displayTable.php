@@ -55,7 +55,7 @@ CREATE TABLE HikerInTrek(
   PRIMARY KEY (hikerID, trekName),
   FOREIGN KEY (hikerID) REFERENCES Hiker(ID) ON DELETE CASCADE,
   FOREIGN KEY (trekName) REFERENCES Trek ON DELETE CASCADE
-);";"
+);";
         sqlsrv_query($conn, $sql);
 
         // Displays the Table
