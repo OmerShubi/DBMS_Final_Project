@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Premier Pro Analytics | Insert</title>
+    <title>Trek Pro Analytics | Insert</title>
 </head>
 <body style="text-align:center">
 

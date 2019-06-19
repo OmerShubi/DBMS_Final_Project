@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Premier Pro Analytics | File</title>
+    <title>Trek Pro Analytics | File</title>
 </head>
 <body style="text-align:center">
 
@@ -66,11 +66,9 @@
                 // Insert data into database
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
                 {
-                    $sql="INSERT INTO PremierLeague
-                            (id, Home, Away, home_goals, away_goals, result, season, notes) VALUES 
-                    ('".addslashes($counter)."','".addslashes($data[0])."','".addslashes($data[1])."','"
-                        .addslashes($data[2])."','".addslashes($data[3])."','".addslashes($data[4])."','"
-                        .addslashes($data[5])."','".addslashes($data[6])."'); ";
+                    $sql="INSERT INTO Hiker (ID, fullName, originCountry, Smoker, Fitness) VALUES 
+                    ('".addslashes($data[0])."','".addslashes($data[1])."','"
+                        .addslashes($data[2])."','".addslashes($data[3])."','".addslashes($data[4])."'); ";
                     $sql_result = sqlsrv_query($conn, $sql);
                     $counter = $counter + 1;
 
@@ -113,11 +111,9 @@
             // Insert data into database
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
-                $sql="INSERT INTO PremierLeague
-                            (id, Home, Away, home_goals, away_goals, result, season, notes) VALUES 
-                    ('".addslashes($counter)."','".addslashes($data[0])."','".addslashes($data[1])."','"
-                    .addslashes($data[2])."','".addslashes($data[3])."','".addslashes($data[4])."','"
-                    .addslashes($data[5])."','".addslashes($data[6])."'); ";
+                $sql="INSERT INTO Trek (trekName, length, LAT, LONG) VALUES 
+                    ('".addslashes($data[0])."','".addslashes($data[1])."','"
+                    .addslashes($data[2])."'; ";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
 
@@ -160,11 +156,8 @@
             // Insert data into database
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
-                $sql="INSERT INTO PremierLeague
-                            (id, Home, Away, home_goals, away_goals, result, season, notes) VALUES 
-                    ('".addslashes($counter)."','".addslashes($data[0])."','".addslashes($data[1])."','"
-                    .addslashes($data[2])."','".addslashes($data[3])."','".addslashes($data[4])."','"
-                    .addslashes($data[5])."','".addslashes($data[6])."'); ";
+                $sql="INSERT INTO TrekInCountry (countryName, trekName) VALUES 
+                    ('".addslashes($data[0])."','".addslashes($data[1])."'); ";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
 
@@ -191,27 +184,15 @@
             // Assuming first row stores column name --> skip insertion
             $data = fgetcsv($handle, 1000, ",");
 
-            $sql = "SELECT COUNT(*) FROM PremierLeague";
-            $is_empty = sqlsrv_query($conn, $sql);
-            // Checks whether table is empty or not, to determine ID of next item
-            if($is_empty == 0){
-                $counter = 1;
-            }
-            else {
-                // Get last ID, increment by one and set as new ID
-                $sql = "SELECT max(id) newID FROM PremierLeague";
-                $IDtable = sqlsrv_query($conn, $sql);
-                $row = sqlsrv_fetch_array($IDtable, SQLSRV_FETCH_ASSOC);
-                $counter = $row['newID'] + 1;
-            }
+            $counter = 0;
+
             // Insert data into database
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
-                $sql="INSERT INTO PremierLeague
+                $sql="INSERT INTO HikerInTrek (hikerID, trekName, startDate) 
                             (id, Home, Away, home_goals, away_goals, result, season, notes) VALUES 
-                    ('".addslashes($counter)."','".addslashes($data[0])."','".addslashes($data[1])."','"
-                    .addslashes($data[2])."','".addslashes($data[3])."','".addslashes($data[4])."','"
-                    .addslashes($data[5])."','".addslashes($data[6])."'); ";
+                    ('".addslashes($data[0])."','".addslashes($data[1])."','"
+                    .addslashes($data[2])."'); ";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
 

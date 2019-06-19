@@ -28,6 +28,7 @@
             <a href="addDataFile.php" target="MainFrame">LOAD DATA</a>
             &nbsp;&nbsp;&nbsp;
             <a href="insertData.php" target="MainFrame">ADD TRAVELER</a>
+
             <a href="storyMap.php" target="MainFrame">STORY MAP</a><br>
         </h3>
         <iframe name="MainFrame" src="displayTable.php"></iframe>
