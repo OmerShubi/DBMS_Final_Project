@@ -17,7 +17,10 @@
         sqlsrv_query($conn, $sql);
 
         // Displays the Table
-        //$sql = "SELECT * FROM PremierLeague;" ;
+        $sql = "SELECT trekName 
+                FROM HikerInTrek 
+                GROUP BY trekName 
+                ORDER BY COUNT(hikerID);" ;
 
         $result = sqlsrv_query($conn, $sql);
 
