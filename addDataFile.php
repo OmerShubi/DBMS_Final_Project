@@ -14,30 +14,37 @@
         Add new data below
     </h2>
 
-<!--    File Selection   -->
+    <h2 style="font-size:20px;color:white">
+        New Hiker Data
+    </h2>
+    <!--    File Selection   -->
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
-
-        <h2 style="font-size:20px;color:white">
-            New Hiker Data
-        </h2>
         <input name="csv1" type="file" id="csv1" accept=".csv" />
         <input type="submit" name="submit1" value="Upload" />
-        <h2 style="font-size:20px;color:white">
+    </form>
+
+    <h2 style="font-size:20px;color:white">
             New Trek Data
-        </h2>
+    </h2>
+    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
         <input name="csv2" type="file" id="csv2" accept=".csv" />
         <input type="submit" name="submit2" value="Upload" />
-        <h2 style="font-size:20px;color:white">
+    </form>
+
+    <h2 style="font-size:20px;color:white">
             New Treks in Countries Data
-        </h2>
+    </h2>
+    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
         <input name="csv3" type="file" id="csv3" accept=".csv" />
         <input type="submit" name="submit3" value="Upload" />
-        <h2 style="font-size:20px;color:white">
-            New Hikers in Treks Data
-        </h2>
+    </form>
+
+    <h2 style="font-size:20px;color:white">
+        New Hikers in Treks Data
+    </h2>
+    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
         <input name="csv4" type="file" id="csv4" accept=".csv" />
         <input type="submit" name="submit4" value="Upload" />
-
     </form>
 
     <!--    Insert Hiker data into database   -->
