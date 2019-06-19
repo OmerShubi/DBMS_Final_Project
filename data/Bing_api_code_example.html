@@ -1,0 +1,50 @@
+<html>
+<head> 
+    <title> Example </title>
+</head> 
+
+<body>
+
+
+<script type='text/javascript'>
+    
+	//In order to display the map - you will need to insert this code into your website.
+	//Remember that with PHP - you can modify this code with suitable values from the database.
+	var map;
+    function GetMap()
+    {
+		//Initialzing Map Obejct
+		map = new Microsoft.Maps.Map('#myMap', {});
+		
+		 //Setting the center of the map - you can choose any intial center location you like.
+		map.setView({
+		mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+		center: new Microsoft.Maps.Location(28.595,83.819),
+		zoom: 10
+		});
+
+		//--Code for adding a pin--
+		
+		//add relevant trek location here - the format is Lat/Long
+		var center = new Microsoft.Maps.Location(28.595,83.819);
+		//pin definition code - replace the title with trek name and the number (according to project requirements)
+		var pin = new Microsoft.Maps.Pushpin(center, {
+			title: 'Annapurna',
+			text:'1'
+		});
+		//Add pushpin to the map.
+		map.entities.push(pin);
+		
+		//In order to add more pins - all you have to do is to reuse the code above with different parameter values
+		
+		
+		//--End of pin code--
+    }
+	</script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AvJZzTmbwvMGXaZRbr3HrfyHDxYBVVFpkxnqpzkFg6d1P8lTk6vOAEnsYqSUYJB7'></script>
+	<center>
+<div id="mapContainer" class="standardMap" style="width:50%;height:50%">
+<div id="myMap"></div></div>
+</center>
+</body>
+</html>
