@@ -28,6 +28,7 @@
 
     <!--    Query Database   -->
     <?php
+        $is_empty = 0;
         if (isset($_POST["submit"]))
         {
             // Insert data into database
