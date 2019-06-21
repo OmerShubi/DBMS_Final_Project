@@ -6,7 +6,7 @@
 <body style="text-align:center">
 
     <h2 style="font-size:20px;color:white">
-        Another game played? Add it here!
+        New Hiker? Add your Info Below!
     </h2>
 
     <?php

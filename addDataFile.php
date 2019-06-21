@@ -15,41 +15,46 @@
     </h2>
     <br>
 
-    <h2 style="font-size:20px;color:white">
-        New Hiker Data
-    </h2>
-    <!--    File Selection   -->
+    <!--    Files Selection   -->
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
-        <input name="csv1" type="file" id="csv1" accept=".csv" />
-        <input type="submit" name="submit1" value="Upload" />
-    <br>
 
-    <h2 style="font-size:20px;color:white">
-            New Trek Data
-    </h2>
-        <input name="csv2" type="file" id="csv2" accept=".csv" />
-        <input type="submit" name="submit2" value="Upload" />
-    <br>
+        <!--    Hiker File Selection   -->
+        <h2 style="font-size:20px;color:white">
+            New Hiker Data
+        </h2>
+        <input name="csvHiker" type="file" id="csvHiker" accept=".csv" />
+        <input type="submit" name="submitHiker" value="Upload" />
+        <br>
 
-    <h2 style="font-size:20px;color:white">
-            New Treks in Countries Data
-    </h2>
-        <input name="csv3" type="file" id="csv3" accept=".csv" />
-        <input type="submit" name="submit3" value="Upload" />
-    <br>
+        <!--   Trek File Selection   -->
+        <h2 style="font-size:20px;color:white">
+                New Trek Data
+        </h2>
+        <input name="csvTrek" type="file" id="csvTrek" accept=".csv" />
+        <input type="submit" name="submitTrek" value="Upload" />
+        <br>
 
-    <h2 style="font-size:20px;color:white">
+        <!--   Treks in Countries (TiC) File Selection   -->
+        <h2 style="font-size:20px;color:white">
+                New Treks in Countries Data
+        </h2>
+            <input name="csvTiC" type="file" id="csvTiC" accept=".csv" />
+            <input type="submit" name="submitTiC" value="Upload" />
+        <br>
+
+        <!--   Hiker in Trek (HiT) File Selection   -->
+        <h2 style="font-size:20px;color:white">
         New Hikers in Treks Data
     </h2>
-        <input name="csv4" type="file" id="csv4" accept=".csv" />
-        <input type="submit" name="submit4" value="Upload" />
+        <input name="csvHiT" type="file" id="csvHiT" accept=".csv" />
+        <input type="submit" name="submitHiT" value="Upload" />
     </form>
 
     <!--    Insert Hiker data into database   -->
     <?php
-        if (isset($_POST["submit1"]))
+        if (isset($_POST["submitHiker"]))
         {
-            $file = $_FILES['csv1']['tmp_name'];
+            $file = $_FILES['csvHiker']['tmp_name'];
             if (($handle = fopen($file, "r")) !== FALSE)
             {
                 // Assuming first row stores column name --> skip insertion
@@ -82,9 +87,9 @@
 
     <!--    Insert Trek data into database   -->
     <?php
-    if (isset($_POST["submit2"]))
+    if (isset($_POST["submitTrek"]))
     {
-        $file = $_FILES['csv2']['tmp_name'];
+        $file = $_FILES['csvTrek']['tmp_name'];
         if (($handle = fopen($file, "r")) !== FALSE)
         {
             // Assuming first row stores column name --> skip insertion
@@ -116,9 +121,9 @@
 
     <!--    Insert Trek in Country data into database   -->
     <?php
-    if (isset($_POST["submit3"]))
+    if (isset($_POST["submitTiC"]))
     {
-        $file = $_FILES['csv3']['tmp_name'];
+        $file = $_FILES['csvTiC']['tmp_name'];
         if (($handle = fopen($file, "r")) !== FALSE)
         {
             // Assuming first row stores column name --> skip insertion
@@ -127,11 +132,16 @@
             // Insert data into database
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
-                $sql="INSERT INTO TrekInCountry (countryName, trekName) VALUES 
+                $sql="
+                IF NOT Exists (Select * from TrekInCountry WHERE countryName='".addslashes($data[0])."' 
+                AND trekName='".addslashes($data[1])."')
+                BEGIN
+I                   INSERT INTO TrekInCountry (countryName, trekName) VALUES 
                     (
                      '".addslashes($data[0])."',
                      '".addslashes($data[1])."'
-                     ); ";
+                     ); 
+                END";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
 
@@ -148,9 +158,9 @@
 
     <!--    Insert Hikers in Treks data into database   -->
     <?php
-    if (isset($_POST["submit4"]))
+    if (isset($_POST["submitHiT"]))
     {
-        $file = $_FILES['csv4']['tmp_name'];
+        $file = $_FILES['csvHiT']['tmp_name'];
         if (($handle = fopen($file, "r")) !== FALSE)
         {
             // Assuming first row stores column name --> skip insertion
@@ -160,8 +170,11 @@
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
                 $sql="INSERT INTO HikerInTrek (hikerID, trekName, startDate) VALUES 
-                    ('".addslashes($data[0])."','".addslashes($data[1])."','"
-                    .addslashes($data[2])."'); ";
+                    (
+                     '".addslashes($data[0])."',
+                    '".addslashes($data[1])."',
+                    '".addslashes($data[2])."'
+                    ); ";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
 
@@ -176,8 +189,8 @@
     }
     ?>
 
+    <!--    Close the connection -->
     <?php
-    /* Close the connection. */
     sqlsrv_close( $conn);
     ?>
 </body>
