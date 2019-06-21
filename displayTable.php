@@ -17,12 +17,12 @@
         sqlsrv_query($conn, $sql);
 
         // Displays the Table
-        $sql = "SELECT trekName 
+        /*$sql = "SELECT trekName
                 FROM HikerInTrek 
                 GROUP BY trekName 
                 ORDER BY COUNT(hikerID);";
 
-        $result = sqlsrv_query($conn, $sql);
+        $result = sqlsrv_query($conn, $sql);*/
 
         echo '<table>';
 

@@ -155,8 +155,7 @@
             // Insert data into database
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
-                $sql="INSERT INTO HikerInTrek (hikerID, trekName, startDate) 
-                            (id, Home, Away, home_goals, away_goals, result, season, notes) VALUES 
+                $sql="INSERT INTO HikerInTrek (hikerID, trekName, startDate) VALUES 
                     ('".addslashes($data[0])."','".addslashes($data[1])."','"
                     .addslashes($data[2])."'); ";
                 $sql_result = sqlsrv_query($conn, $sql);
