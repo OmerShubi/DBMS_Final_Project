@@ -80,8 +80,8 @@
 
             <!--    Submission & Reset Buttons   -->
             <tr>
-                <td><input name="submit" type="submit" value="Add Result"></td>
-                <td><input name="reset" type="reset" value="Reset Page"></td>
+                <td><input name="submit" type="submit" value="Add Hiker"></td>
+                <td><input name="reset" type="reset" value="Reset Form"></td>
             </tr>
         </table>
     </form>
@@ -104,7 +104,7 @@
 
             // In case of failure
             if (!$sql_result) {
-                die("<h3 style='color:darkred;'>Upload Failed. Please try again.</h3>");
+                die("<h3 style='color:darkred;'>Upload Failed. Please try again. Do we know you already?</h3>");
             }
             else{
                 echo "<H3 style='color: darkgreen'>Hiker Added Successfully</H3>";
