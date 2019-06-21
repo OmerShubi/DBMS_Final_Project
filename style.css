@@ -24,7 +24,6 @@ th,td
     text-align: center;
     word-spacing: normal;
     border: 1px solid black;
-    padding: 5px;
 }
 th{
     padding: 5px;
@@ -77,4 +76,6 @@ div {
 table.insertion_table tr, table.insertion_table td, table.insertion_table th{
     border: 0;
     text-align: left;
+    padding: 7px;
+
 }

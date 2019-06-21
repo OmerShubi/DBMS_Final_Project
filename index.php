@@ -12,15 +12,15 @@
 
     <img src="banner.jpg" alt="Trek Pro Analytics Logo" style="width: 100%; border: 1px solid black">
 
-    <div class="layer" style="color: #093738">
+    <div class="layer">
 
-        <h1>
+        <h1 style="color: #093738">
             <br>Trek Pro Analytics<br>
         </h1>
        <div style="background-color: rgba(255,255,255,0.7)">
-           <h2  style="color: #093738; vertical-align: center">
+           <h3  style="color: #093738; vertical-align: center">
                <i>Advanced Database & Analytics Tool. For Hikers by Hikers.</i>
-           </h2>
+           </h3>
        </div>
     <h3>
             <a href="displayTable.php" target="MainFrame">DISPLAY STATS</a>
