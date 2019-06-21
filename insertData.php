@@ -22,7 +22,7 @@
             <tr>
                 <td><label for="ID">ID*</label></td>
                 <td><label>
-                        <input name="ID" type="text" size="24" required placeholder="Numbers only!">
+                        <input name="ID" type="number" size="24" required placeholder="Your ID">
                     </label></td>
             </tr>
             <tr></tr>
@@ -35,11 +35,11 @@
             </tr>
             <tr></tr>
 
-            <!--    Country   -->
+            <!--    originCountry   -->
             <tr>
-                <td><label for="Country">Country</label></td>
+                <td><label for="originCountry">Country</label></td>
                 <td><label>
-                        <input name="Country" type="text" size="24" placeholder="Country of Birth">
+                        <input name="originCountry" type="text" size="24" placeholder="Country of Birth">
                     </label></td>
             </tr>
             <tr></tr>
