@@ -62,7 +62,7 @@
                 $data = fgetcsv($handle, 1000, ",");
                 $counter = 0;
                 // Insert data into database
-                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
+                while (($data = fgetcsv($handle, 10000, ",")) !== FALSE)
                 {
                     $sql="INSERT INTO Hiker (ID, fullName, originCountry, Smoker, Fitness) VALUES 
                     ('".addslashes($data[0])."','".addslashes($data[1])."','"
@@ -77,7 +77,6 @@
                 }
                 fclose($handle);
                 echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL ($counter records uploaded)</h3>";
-
             }
         }
     /* Close the connection. */
