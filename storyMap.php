@@ -58,6 +58,9 @@
                 if (!$sql_result) {
                     die("<h3 style='color:darkred;'>Unexpected error. Please try again.</h3>");
                 }
+
+                echo "GetMap()";
+
             }
         }
 ?>
@@ -95,7 +98,6 @@
             ?>
             //--End of pin code--
         }
-        GetMap()
     </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AvJZzTmbwvMGXaZRbr3HrfyHDxYBVVFpkxnqpzkFg6d1P8lTk6vOAEnsYqSUYJB7'></script>
         <div id="mapContainer" class="standardMap" style="width:50%;height:50%">
