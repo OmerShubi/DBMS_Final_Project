@@ -59,8 +59,13 @@
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
                 {
                     $sql="INSERT INTO Hiker (ID, fullName, originCountry, Smoker, Fitness) VALUES 
-                    ('".addslashes($data[0])."','".addslashes($data[1])."','"
-                        .addslashes($data[2])."','".addslashes($data[3])."','".addslashes($data[4])."'); ";
+                    (
+                     '".addslashes($data[0])."',
+                     '".addslashes($data[1])."',
+                     '".addslashes($data[2])."',
+                     '".addslashes($data[3])."',
+                     '".addslashes($data[4])."'
+                     );";
                     $sql_result = sqlsrv_query($conn, $sql);
                     $counter = $counter + 1;
 
@@ -91,8 +96,12 @@
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
                 $sql="INSERT INTO Trek (trekName, length, LAT, LONG) VALUES 
-                    ('".addslashes($data[0])."','".addslashes($data[1])."','"
-                    .addslashes($data[2])."','".addslashes($data[3])."';";
+                    (
+                     '" . addslashes($data[0]) . "',
+                     '" . addslashes($data[1]) . "',
+                     '" . addslashes($data[2]) . "',
+                     '" . addslashes($data[3]) . "'
+                     );";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
 
