@@ -14,7 +14,7 @@
 
     <div class="layer">
 
-        <h1 style="color: ghostwhite;">
+        <h1 style="color: ghostwhite; background-color: #263f63">
             <i>Advanced Database & Analytics Tool. &nbsp; For Hikers by Hikers.</i>
         </h1>
 
@@ -23,7 +23,7 @@
             &nbsp;&nbsp;&nbsp;
             <a href="addDataFile.php" target="MainFrame">LOAD DATA</a>
             &nbsp;&nbsp;&nbsp;
-            <a href="insertData.php" target="MainFrame">ADD TRAVELER</a>
+            <a href="insertData.php" target="MainFrame">ADD HIKER</a>
         &nbsp; &nbsp;
             <a href="storyMap.php" target="MainFrame">STORY MAP</a><br>
         </h3>
