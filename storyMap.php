@@ -73,7 +73,7 @@
             map.setView({
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial,
                 center: new Microsoft.Maps.Location(28.595, 83.819),
-                zoom: 10
+                zoom: 1
             });
 
             //--Code for adding a pin--
