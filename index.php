@@ -14,12 +14,12 @@
 
     <div class="layer">
 
-        <h1 style="color: ghostwhite">
-            <br>Trek Pro Analytics<br>
-        </h1>
+        <h2 style="color: ghostwhite">
+            <br><i>Advanced Database & Analytics Tool. &nbsp; For Hikers by Hikers.</i><br>
+        </h2>
        <div style="background-color: rgba(255,255,255,0.7)">
            <h3  style="color: ghostwhite; vertical-align: center">
-               <i>Advanced Database & Analytics Tool. For Hikers by Hikers.</i>
+                &nbsp;
            </h3>
        </div>
     <h3>
