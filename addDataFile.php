@@ -132,10 +132,10 @@
             // Insert data into database
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
-                $sql="BEGIN IF NOT Exists (Select 1 from TrekInCountry WHERE countryName='".addslashes($data[0])."' AND trekName='".addslashes($data[0])."')
+                $sql="BEGIN IF NOT Exists (Select 1 from TrekInCountry WHERE countryName='".addslashes($data[0])."' AND trekName='".addslashes($data[1])."')
             BEGIN
                 INSERT INTO TrekInCountry (countryName, trekName)  VALUES
-                ('".addslashes($data[0])."', '".addslashes($data[0])."');
+                ('".addslashes($data[0])."', '".addslashes($data[1])."');
             END END";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
