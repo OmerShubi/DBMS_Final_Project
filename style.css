@@ -48,6 +48,9 @@ body.main {
     background: cadetblue;
     background-size: cover;
     text-align: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
 }
 
 .layer {
