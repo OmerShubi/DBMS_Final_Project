@@ -78,8 +78,6 @@
                 echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL ($counter records uploaded)</h3>";
             }
         }
-    /* Close the connection. */
-    sqlsrv_close( $conn);
     ?>
 
     <!--    Insert Trek data into database   -->
@@ -97,10 +95,10 @@
             {
                 $sql="INSERT INTO Trek (trekName, length, LAT, LONG) VALUES 
                     (
-                     '" . addslashes($data[0]) . "',
-                     '" . addslashes($data[1]) . "',
-                     '" . addslashes($data[2]) . "',
-                     '" . addslashes($data[3]) . "'
+                     '".addslashes($data[0])."',
+                     '".addslashes($data[1])."',
+                     '".addslashes($data[2])."',
+                     '".addslashes($data[3])."'
                      );";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
@@ -114,8 +112,6 @@
             echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL ($counter records uploaded)</h3>";
         }
     }
-    /* Close the connection. */
-    sqlsrv_close( $conn);
     ?>
 
     <!--    Insert Trek in Country data into database   -->
@@ -132,7 +128,10 @@
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
                 $sql="INSERT INTO TrekInCountry (countryName, trekName) VALUES 
-                    ('".addslashes($data[0])."','".addslashes($data[1])."'); ";
+                    (
+                     '".addslashes($data[0])."',
+                     '".addslashes($data[1])."'
+                     ); ";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
 
@@ -145,8 +144,6 @@
             echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL ($counter records uploaded)</h3>";
         }
     }
-    /* Close the connection. */
-    sqlsrv_close( $conn);
     ?>
 
     <!--    Insert Hikers in Treks data into database   -->
@@ -177,9 +174,11 @@
             echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL</h3>";
         }
     }
+    ?>
+
+    <?php
     /* Close the connection. */
     sqlsrv_close( $conn);
     ?>
-
 </body>
 </html>
