@@ -13,6 +13,7 @@
     <h2 style="font-size:20px;color:white">
         Add new data below
     </h2>
+    <br>
 
     <h2 style="font-size:20px;color:white">
         New Hiker Data
@@ -22,6 +23,7 @@
         <input name="csv1" type="file" id="csv1" accept=".csv" />
         <input type="submit" name="submit1" value="Upload" />
     </form>
+    <br>
 
     <h2 style="font-size:20px;color:white">
             New Trek Data
@@ -30,6 +32,7 @@
         <input name="csv2" type="file" id="csv2" accept=".csv" />
         <input type="submit" name="submit2" value="Upload" />
     </form>
+    <br>
 
     <h2 style="font-size:20px;color:white">
             New Treks in Countries Data
@@ -38,6 +41,7 @@
         <input name="csv3" type="file" id="csv3" accept=".csv" />
         <input type="submit" name="submit3" value="Upload" />
     </form>
+    <br>
 
     <h2 style="font-size:20px;color:white">
         New Hikers in Treks Data
@@ -68,7 +72,7 @@
 
                     // In case of failure
                     if (!$sql_result) {
-                        die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV of correct format)</H3>");
+                        die("<H3 style='color: darkred'>UPLOAD FAILED1<br>(Should be CSV of correct format)</H3>");
                     }
                 }
                 fclose($handle);

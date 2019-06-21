@@ -6,7 +6,6 @@
 <body>
     <?php
         include 'db_connection.php';
-        //include 'Create_Tables.sql';
         // Open Connection
         $conn = OpenCon();
 
