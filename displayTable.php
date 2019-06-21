@@ -52,12 +52,12 @@
         // Displays the Table
         echo '<table>';
 
-        echo "<thead><tr><th>Most Hiked Trek</th><th>Most Experienced Hiker</th><th>Special Hiker</th></tr></thead>";
+        echo "<thead><tr><th>Most Hiked Trek</th><th>Most Experienced Hiker</th><th>Last Nepal Hiker</th></tr></thead>";
 
         $row1 = sqlsrv_fetch_array($result_most_hiked_trek, SQLSRV_FETCH_NUMERIC);
         $mostHikedTrek = $row1[0];
 
-        $row2 = sqlsrv_fetch_array($result_most_hiked_trek, SQLSRV_FETCH_NUMERIC);
+        $row2 = sqlsrv_fetch_array($result_most_trekked_hiker, SQLSRV_FETCH_NUMERIC);
         $MostTrekkedHiker = $row2[0];
 
         $row3 =sqlsrv_fetch_array($result_last_Nepal_hiker, SQLSRV_FETCH_NUMERIC);
