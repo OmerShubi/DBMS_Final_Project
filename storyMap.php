@@ -19,7 +19,6 @@
         <h2 style="font-size:20px;color:white">
             Enter Your ID
         </h2>
-        <label for="ID">ID</label>
         <label>
                 <input name="ID" type="number" size="24" required placeholder="Your ID">
         </label>
