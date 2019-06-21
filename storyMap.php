@@ -35,18 +35,28 @@
             // Insert data into database
             //TODO HANDLE CASE WHERE NOT EXISTS
             $userID = $_POST['ID'];
-            $sql = "SELECT Trek.trekName, LAT, LONG
-                    FROM HikerInTrek HiT, Trek
-                    WHERE HiT.trekName = Trek.trekName AND HiT.hikerID = '".$userID."'
-                    ORDER BY HiT.startDate ASC;";
 
-            $sql_result = sqlsrv_query($conn, $sql);
-            $counter = 0;
-            // In case of failure
-            if (!$sql_result) {
-                die("<h3 style='color:darkred;'>Unexpected error. Please try again.</h3>");
+            $sql = "SELECT COUNT(*) FROM Hiker WHERE Hiker.ID = '".$userID."'";
+            $is_empty = sqlsrv_query($conn, $sql);
+            // Checks whether table is empty or not, to determine ID of next item
+            if($is_empty == 0){
+                echo "<H3 style='color: darkred'>
+                        I don't know who you are. But I will find you, and I will teach you SQL!
+                        </H3>";
             }
+            else{
+                $sql = "SELECT Trek.trekName, LAT, LONG
+                        FROM HikerInTrek HiT, Trek
+                        WHERE HiT.trekName = Trek.trekName AND HiT.hikerID = '".$userID."'
+                        ORDER BY HiT.startDate ASC;";
 
+                $sql_result = sqlsrv_query($conn, $sql);
+                $counter = 0;
+                // In case of failure
+                if (!$sql_result) {
+                    die("<h3 style='color:darkred;'>Unexpected error. Please try again.</h3>");
+                }
+            }
         }
 ?>
 
@@ -81,12 +91,10 @@
                 map.entities.push(pin);";
             }
             ?>
-            //In order to add more pins - all you have to do is to reuse the code above with different parameter values
-
             //--End of pin code--
         }
         GetMap()
-    </script>";
+    </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AvJZzTmbwvMGXaZRbr3HrfyHDxYBVVFpkxnqpzkFg6d1P8lTk6vOAEnsYqSUYJB7'></script>
         <div id="mapContainer" class="standardMap" style="width:50%;height:50%">
             <div id="myMap"></div></div>
