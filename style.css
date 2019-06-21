@@ -1,36 +1,33 @@
-h1, h2, h3
-{
+h1, h2, h3 {
     font-family: Verdana, Geneva, sans-serif;
     color: white;
 }
 
-table
-{
-    background-color:white;
-    font-family:Tahoma, Geneva, sans-serif;
+table {
+    background-color: white;
+    font-family: Tahoma, Geneva, sans-serif;
     color: black;
     border: 1px solid black;
     text-align: left;
     word-spacing: normal;
-    width:90%;
-    margin-left:5%;
-    margin-right:5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-th,td
-{
-    font-family:Tahoma, Geneva, sans-serif;
+th, td {
+    font-family: Tahoma, Geneva, sans-serif;
     color: black;
     text-align: center;
     word-spacing: normal;
     border: 1px solid black;
 }
-th{
+
+th {
     padding: 5px;
 }
 
-iframe
-{
+iframe {
     margin: 0;
     padding: 0;
     border: none;
@@ -39,19 +36,30 @@ iframe
     max-height: 700px;
 }
 
-a:link {font-family: Tahoma, Geneva, sans-serif ; color:white}
-a:visited  {color:white}
-a:active   {color:yellow}
-a:hover    {color: #519feb
+a:link {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: white
+}
+
+a:visited {
+    color: white
+}
+
+a:active {
+    color: yellow
+}
+
+a:hover {
+    color: #519feb
 }
 
 body.main {
     background: #263f63;
     background-size: cover;
     text-align: center;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
 }
 
 .layer {
@@ -65,19 +73,20 @@ div {
     margin: auto;
 }
 
-.insertion_table{
+.insertion_table {
     font-family: Verdana, Geneva, sans-serif;
-    background-color: rgba(38,63,99,0.3);
+    background-color: rgba(38, 63, 99, 0.3);
     color: White;
     border: none;
     text-align: left;
     word-spacing: normal;
-    width:26%;
+    width: 26%;
     padding: 10px;
-    margin-left:37%;
-    margin-right:37%;}
+    margin-left: 37%;
+    margin-right: 37%;
+}
 
-table.insertion_table tr, table.insertion_table td, table.insertion_table th{
+table.insertion_table tr, table.insertion_table td, table.insertion_table th {
     border: 0;
     text-align: left;
     padding: 7px;
