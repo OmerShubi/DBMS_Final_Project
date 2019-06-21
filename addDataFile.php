@@ -72,7 +72,7 @@
 
                     // In case of failure
                     if (!$sql_result) {
-                        die("<H3 style='color: darkred'>UPLOAD FAILED1<br>(Should be CSV of correct format)</H3>");
+                        die("<H3 style='color: darkred'>UPLOAD FAILED1<br>(Should be CSV and of correct format)</H3>");
                     }
                 }
                 fclose($handle);
@@ -98,13 +98,13 @@
             {
                 $sql="INSERT INTO Trek (trekName, length, LAT, LONG) VALUES 
                     ('".addslashes($data[0])."','".addslashes($data[1])."','"
-                    .addslashes($data[2])."'; ";
+                    .addslashes($data[2])."','".addslashes($data[3])."';";
                 $sql_result = sqlsrv_query($conn, $sql);
                 $counter = $counter + 1;
 
                 // In case of failure
                 if (!$sql_result) {
-                    die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV of correct format)</H3>");
+                    die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV and of correct format)</H3>");
                 }
             }
             fclose($handle);
@@ -135,7 +135,7 @@
 
                 // In case of failure
                 if (!$sql_result) {
-                    die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV of correct format)</H3>");
+                    die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV and of correct format)</H3>");
                 }
             }
             fclose($handle);
@@ -167,7 +167,7 @@
 
                 // In case of failure
                 if (!$sql_result) {
-                    die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV of correct format)</H3>");
+                    die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV and of correct format)</H3>");
                 }
             }
             fclose($handle);
