@@ -16,14 +16,14 @@
     <br>
 
     <!--    Files Selection   -->
-    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
+        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
 
-        <!--    Hiker File Selection   -->
-        <h2 style="font-size:20px;color:white">
-            New Hiker Data
-        </h2>
-        <input name="csvHiker" type="file" id="csvHiker" accept=".csv" />
-        <input type="submit" name="submitHiker" value="Upload" />
+            <!--    Hiker File Selection   -->
+            <h2 style="font-size:20px;color:white">
+                New Hiker Data
+            </h2>
+            <input name="csvHiker" type="file" id="csvHiker" accept=".csv" />
+            <input type="submit" name="submitHiker" value="Upload" />
         <br>
 
         <!--   Trek File Selection   -->
