@@ -28,7 +28,7 @@
             New Trek Data
     </h2>
         <input name="csv2" type="file" id="csv2" accept=".csv" />
-        <input type="submit" name="submit2" id="submit2" value="Upload" />
+        <input type="submit" name="submit2" value="Upload" />
     <br>
 
     <h2 style="font-size:20px;color:white">
