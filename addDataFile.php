@@ -59,7 +59,8 @@
             {
                 // Assuming first row stores column name --> skip insertion
                 $data = fgetcsv($handle, 1000, ",");
-                $counter = 0;
+                $counter_all = 0;
+                $counter_success = 0;
                 // Insert data into database
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
                 {
@@ -71,16 +72,21 @@
                      '".addslashes($data[3])."',
                      '".addslashes($data[4])."'
                      );";
-                    $sql_result = sqlsrv_query($conn, $sql);
-                    $counter = $counter + 1;
 
-                    // In case of failure
-                    if (!$sql_result) {
-                        die("<H3 style='color: darkred'>UPLOAD FAILED1<br>(Should be CSV and of correct format)</H3>");
+                    $sql_result = sqlsrv_query($conn, $sql);
+
+                    // In case of success
+                    if($sql_result){
+                        $counter_success = $counter_success + 1;
                     }
+
+                    $counter_all = $counter_all + 1;
                 }
                 fclose($handle);
-                echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL ($counter records uploaded)</h3>";
+                echo"<h3 style='color: darkgreen'>$counter_success (out of $counter_all) records uploaded successfully!</h3>";
+            }
+            else{
+                echo("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV of correct format)</H3>");
             }
         }
     ?>
@@ -94,7 +100,8 @@
         {
             // Assuming first row stores column name --> skip insertion
             $data = fgetcsv($handle, 1000, ",");
-            $counter = 0;
+            $counter_all = 0;
+            $counter_success = 0;
             // Insert data into database
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
@@ -105,16 +112,21 @@
                      '".addslashes($data[2])."',
                      '".addslashes($data[3])."'
                      );";
-                $sql_result = sqlsrv_query($conn, $sql);
-                $counter = $counter + 1;
 
-                // In case of failure
-                if (!$sql_result) {
-                    die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV and of correct format)</H3>");
+                $sql_result = sqlsrv_query($conn, $sql);
+
+                // In case of success
+                if($sql_result){
+                    $counter_success = $counter_success + 1;
                 }
+
+                $counter_all = $counter_all + 1;
             }
             fclose($handle);
-            echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL ($counter records uploaded)</h3>";
+            echo"<h3 style='color: darkgreen'>$counter_success (out of $counter_all) records uploaded successfully!</h3>";
+        }
+        else{
+            echo("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV of correct format)</H3>");
         }
     }
     ?>
@@ -128,25 +140,31 @@
         {
             // Assuming first row stores column name --> skip insertion
             $data = fgetcsv($handle, 1000, ",");
-            $counter = 0;
+            $counter_all = 0;
+            $counter_success = 0;
             // Insert data into database
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
-                $sql="BEGIN IF NOT Exists (Select 1 from TrekInCountry WHERE countryName='".addslashes($data[0])."' AND trekName='".addslashes($data[1])."')
-            BEGIN
-                INSERT INTO TrekInCountry (countryName, trekName)  VALUES
-                ('".addslashes($data[0])."', '".addslashes($data[1])."');
-            END END";
-                $sql_result = sqlsrv_query($conn, $sql);
-                $counter = $counter + 1;
+                $sql="INSERT INTO TrekInCountry (countryName, trekName) VALUES 
+                    (
+                     '".addslashes($data[0])."',
+                     '".addslashes($data[1])."'
+                     ); ";
 
-                // In case of failure
-                if (!$sql_result) {
-                    die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV and of correct format)</H3>");
+                $sql_result = sqlsrv_query($conn, $sql);
+
+                // In case of success
+                if($sql_result){
+                    $counter_success = $counter_success + 1;
                 }
+
+                $counter_all = $counter_all + 1;
             }
             fclose($handle);
-            echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL ($counter records uploaded)</h3>";
+            echo"<h3 style='color: darkgreen'>$counter_success (out of $counter_all) records uploaded successfully!</h3>";
+        }
+        else{
+            echo("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV of correct format)</H3>");
         }
     }
     ?>
@@ -160,7 +178,8 @@
         {
             // Assuming first row stores column name --> skip insertion
             $data = fgetcsv($handle, 1000, ",");
-            $counter = 0;
+            $counter_all = 0;
+            $counter_success = 0;
             // Insert data into database
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
             {
@@ -170,16 +189,21 @@
                     '".addslashes($data[1])."',
                     '".addslashes($data[2])."'
                     ); ";
-                $sql_result = sqlsrv_query($conn, $sql);
-                $counter = $counter + 1;
 
-                // In case of failure
-                if (!$sql_result) {
-                    die("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV and of correct format)</H3>");
+                $sql_result = sqlsrv_query($conn, $sql);
+
+                // In case of success
+                if($sql_result){
+                    $counter_success = $counter_success + 1;
                 }
+
+                $counter_all = $counter_all + 1;
             }
             fclose($handle);
-            echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL</h3>";
+            echo"<h3 style='color: darkgreen'>$counter_success (out of $counter_all) records uploaded successfully!</h3>";
+        }
+        else{
+            echo("<H3 style='color: darkred'>UPLOAD FAILED<br>(Should be CSV of correct format)</H3>");
         }
     }
     ?>
