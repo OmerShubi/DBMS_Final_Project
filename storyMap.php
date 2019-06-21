@@ -33,7 +33,6 @@
         if (isset($_POST["submit"]))
         {
             // Insert data into database
-            //TODO HANDLE CASE WHERE NOT EXISTS
             $userID = $_POST['ID'];
 
             $sql = "SELECT COUNT(*) FROM Hiker WHERE Hiker.ID = '".$userID."'";
@@ -44,7 +43,8 @@
             if($is_empty == 0){
                 echo "<H3 style='color: darkred'>
                         I don't know who you are. But I will find you, and I will teach you SQL!
-                        </H3>";
+                        </H3>
+                        <img src=\"user_not_exist.jpg\" alt=\"Unkown User ID\">";
             }
             else{
                 $sql = "SELECT Trek.trekName, LAT, LONG
@@ -58,9 +58,6 @@
                 if (!$sql_result) {
                     die("<h3 style='color:darkred;'>Unexpected error. Please try again.</h3>");
                 }
-
-                echo "GetMap()";
-
             }
         }
 ?>
@@ -68,36 +65,41 @@
     <!--    Map -->
     <script type='text/javascript'>
         var map;
-        function GetMap()
-        {
+        function GetMap() {
             //Initialzing Map Obejct
             map = new Microsoft.Maps.Map('#myMap', {});
 
             //Setting the center of the map - you can choose any intial center location you like.
             map.setView({
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-                center: new Microsoft.Maps.Location(28.595,83.819),
+                center: new Microsoft.Maps.Location(28.595, 83.819),
                 zoom: 10
             });
 
             //--Code for adding a pin--
             <?php
-            while($row = sqlsrv_fetch_array($sql_result, SQLSRV_FETCH_ASSOC)) {
+            while ($row = sqlsrv_fetch_array($sql_result, SQLSRV_FETCH_ASSOC)) {
                 $counter = $counter + 1;
                 $LAT = $row['LAT'];
                 //add relevant trek location here - the format is Lat/Long
-                echo "var center = new Microsoft.Maps.Location('".$LAT."', '".$row['LONG']."');
+                echo "var center = new Microsoft.Maps.Location('" . $LAT . "', '" . $row['LONG'] . "');
                 //pin definition code - replace the title with trek name and the number (according to project requirements)
                 var pin = new Microsoft.Maps.Pushpin(center, {
-                    title: '".$row['trekName']."',
-                    text: '".$counter."'
+                    title: '" . $row['trekName'] . "',
+                    text: '" . $counter . "'
                 });
                 //Add pushpin to the map.
                 map.entities.push(pin);";
             }
-            ?>
             //--End of pin code--
-        }
+
+            echo "}";
+        if($is_empty != 0){
+            echo "GetMap()";
+        ?>
+
+
+
     </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AvJZzTmbwvMGXaZRbr3HrfyHDxYBVVFpkxnqpzkFg6d1P8lTk6vOAEnsYqSUYJB7'></script>
         <div id="mapContainer" class="standardMap" style="width:50%;height:50%">
