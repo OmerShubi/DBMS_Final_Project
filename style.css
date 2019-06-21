@@ -63,7 +63,7 @@ div {
 
 .insertion_table{
     font-family: Verdana, Geneva, sans-serif;
-    background-color: cadetblue;
+    background-color: rgba(95, 158,160, 0.3);
     color: White;
     border: none;
     text-align: left;

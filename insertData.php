@@ -28,9 +28,9 @@
             <tr></tr>
             <!--    Full Name   -->
             <tr>
-                <td><label for="Name">Full Name</label></td>
+                <td><label for="fullName">Full Name</label></td>
                 <td><label>
-                        <input name="Name" type="text" size="24" placeholder="Your name here">
+                        <input name="fullName" type="text" size="24" placeholder="Your name here">
                     </label></td>
             </tr>
             <tr></tr>
@@ -88,26 +88,24 @@
     <?php
         if (isset($_POST["submit"]))
         {
-            // Get last ID, increment by one and set as new ID
-            $sql = "SELECT max(id) newID FROM PremierLeague";
-            $IDtable = sqlsrv_query($conn, $sql);
-            $row = sqlsrv_fetch_array($IDtable, SQLSRV_FETCH_ASSOC);
-            $id = $row['newID'] + 1;
-
             // Insert data into database
-            $sql = "INSERT INTO PremierLeague (id, Home, Away, notes, home_goals, away_goals, result, season) VALUES
-                   ('".addslashes($id)."','".addslashes($_POST['Home'])."','".addslashes($_POST['Away'])."'
-                   ,'".addslashes($_POST['notes'])."','".addslashes($_POST['home_goals'])."','".addslashes($_POST['away_goals'])."'
-                   ,'".addslashes($_POST['result'])."','".addslashes($_POST['season'])."');";
+            $sql = "INSERT INTO Hiker (ID, fullName, originCountry, Smoker, Fitness) VALUES
+                   (
+                    '".addslashes($_POST['ID'])."',
+                    '".addslashes($_POST['fullName'])."',
+                    '".addslashes($_POST['originCountry'])."',
+                    '".addslashes($_POST['Smoker'])."',
+                    '".addslashes($_POST['Fitness'])."'
+                    );";
 
             $sql_result = sqlsrv_query($conn, $sql);
 
             // In case of failure
             if (!$sql_result) {
-                die("<h3 style='color:darkred;'>UPLOAD FAILED<br>(Season should be max 10 characters)</h3>");
+                die("<h3 style='color:darkred;'>UPLOAD FAILED<br>(Full Name & Country Max 20 Characters)</h3>");
             }
             else{
-                echo "<H3 style='color: darkgreen'>MATCH ADDED</H3>";
+                echo "<H3 style='color: darkgreen'>Hiker Added</H3>";
             }
         }
     /* Close the connection. */
