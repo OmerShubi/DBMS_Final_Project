@@ -15,30 +15,59 @@
         $sql = file_get_contents('Create_Tables.sql');
         sqlsrv_query($conn, $sql);
 
-        // Displays the Table
-        /*$sql = "SELECT trekName
-                FROM HikerInTrek 
-                GROUP BY trekName 
-                ORDER BY COUNT(hikerID);";
+        $sql_most_hiked_trek = "SELECT top(1) trekName
+                 FROM HikerInTrek
+                 GROUP BY trekName
+                 ORDER BY COUNT(hikerID) DESC, trekName ASC;";
 
-        $result = sqlsrv_query($conn, $sql);*/
+        $result_most_hiked_trek = sqlsrv_query($conn, $sql_most_hiked_trek);
 
-        echo '<table>';
+    $sql_most_trekked_hiker = " SELECT top(1) Hiker.fullName
+                                FROM HikerInTrek, Hiker
+                                WHERE HikerInTrek.hikerID = Hiker.ID
+                                GROUP BY hikerID, Hiker.fullName
+                                ORDER BY COUNT(trekName) DESC, Hiker.fullName ASC;";
 
-        echo "<thead><tr><th>Most Hiked Trek</th><th>Most Experienced Hiker</th><th>Special Hiker</th></tr></thead>";
+    $result_most_trekked_hiker = sqlsrv_query($conn, $sql_most_trekked_hiker);
 
-        while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
-        {
-            $mostHikedTrek = $row['mostHikedTrek'];
-            $MostExpHiker = $row['MostExpHiker'];
-            $SpecialHiker = $row['SpecialHiker'];
+    $sql_last_Nepal_hiker = "SELECT   top(1) Hiker.fullName
+    FROM HikerInTrek HIT, TrekInCountry TIC,Hiker
+    WHERE not exists(
+            (SELECT TrekInCountry.trekName
+             FROM TrekInCountry
+             WHERE countryName = 'Nepal')
 
-            echo "<tr><td>".$mostHikedTrek."</td><td>".$MostExpHiker."</td><td>".$SpecialHiker."</td></tr>";
-        }
-        echo "</table>";
+            EXCEPT
 
-        /* Close the connection. */
-        sqlsrv_close( $conn);
+            (SELECT HIT2.trekName
+                FROM  HikerInTrek HIT2 ,TrekInCountry TIC2
+                Where HIT2.hikerID = HIT.hikerID AND TIC2.countryName='Nepal' AND HIT2.trekName=TIC2.trekName)
+
+        ) AND HIT.trekName=TIC.trekName AND TIC.countryName='Nepal' AND HIT.hikerID=Hiker.ID
+    ORDER BY HIT.startDate DESC ;";
+
+    $result_last_Nepal_hiker = sqlsrv_query($conn, $sql_last_Nepal_hiker);
+
+
+    // Displays the Table
+    echo '<table>';
+
+    echo "<thead><tr><th>Most Hiked Trek</th><th>Most Experienced Hiker</th><th>Special Hiker</th></tr></thead>";
+
+    $row1 = sqlsrv_fetch_array($result_most_hiked_trek, SQLSRV_FETCH_NUMERIC);
+    $mostHikedTrek = $row1[0];
+
+    $row2 = sqlsrv_fetch_array($result_most_hiked_trek, SQLSRV_FETCH_NUMERIC);
+    $MostTrekkedHiker = $row2[0];
+
+    $row3 =sqlsrv_fetch_array($result_last_Nepal_hiker, SQLSRV_FETCH_NUMERIC);
+    $LastNepalHiker = $row3[0];
+
+    echo "<tr><td>".$mostHikedTrek."</td><td>".$MostTrekkedHiker."</td><td>".$LastNepalHiker."</td></tr>";
+    echo "</table>";
+
+    /* Close the connection. */
+    sqlsrv_close( $conn);
     ?>
 </body>
 </html>
