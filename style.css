@@ -46,7 +46,7 @@ a:hover    {color:blue}
 
 body.main {
     background: black url("background.jpg");
-    width: auto;
+    background-size: auto;
     text-align: center;
 }
 
