@@ -22,52 +22,52 @@
 
         $result_most_hiked_trek = sqlsrv_query($conn, $sql_most_hiked_trek);
 
-    $sql_most_trekked_hiker = " SELECT top(1) Hiker.fullName
-                                FROM HikerInTrek, Hiker
-                                WHERE HikerInTrek.hikerID = Hiker.ID
-                                GROUP BY hikerID, Hiker.fullName
-                                ORDER BY COUNT(trekName) DESC, Hiker.fullName ASC;";
+        $sql_most_trekked_hiker = " SELECT top(1) Hiker.fullName
+                                    FROM HikerInTrek, Hiker
+                                    WHERE HikerInTrek.hikerID = Hiker.ID
+                                    GROUP BY hikerID, Hiker.fullName
+                                    ORDER BY COUNT(trekName) DESC, Hiker.fullName ASC;";
 
-    $result_most_trekked_hiker = sqlsrv_query($conn, $sql_most_trekked_hiker);
+        $result_most_trekked_hiker = sqlsrv_query($conn, $sql_most_trekked_hiker);
 
-    $sql_last_Nepal_hiker = "SELECT   top(1) Hiker.fullName
-    FROM HikerInTrek HIT, TrekInCountry TIC,Hiker
-    WHERE not exists(
-            (SELECT TrekInCountry.trekName
-             FROM TrekInCountry
-             WHERE countryName = 'Nepal')
+        $sql_last_Nepal_hiker = "SELECT   top(1) Hiker.fullName
+                                FROM HikerInTrek HIT, TrekInCountry TIC,Hiker
+                                WHERE not exists(
+                                        (SELECT TrekInCountry.trekName
+                                         FROM TrekInCountry
+                                         WHERE countryName = 'Nepal')
+                            
+                                        EXCEPT
+                            
+                                        (SELECT HIT2.trekName
+                                            FROM  HikerInTrek HIT2 ,TrekInCountry TIC2
+                                            Where HIT2.hikerID = HIT.hikerID AND TIC2.countryName='Nepal' AND HIT2.trekName=TIC2.trekName)
+                            
+                                    ) AND HIT.trekName=TIC.trekName AND TIC.countryName='Nepal' AND HIT.hikerID=Hiker.ID
+                                ORDER BY HIT.startDate DESC ;";
 
-            EXCEPT
-
-            (SELECT HIT2.trekName
-                FROM  HikerInTrek HIT2 ,TrekInCountry TIC2
-                Where HIT2.hikerID = HIT.hikerID AND TIC2.countryName='Nepal' AND HIT2.trekName=TIC2.trekName)
-
-        ) AND HIT.trekName=TIC.trekName AND TIC.countryName='Nepal' AND HIT.hikerID=Hiker.ID
-    ORDER BY HIT.startDate DESC ;";
-
-    $result_last_Nepal_hiker = sqlsrv_query($conn, $sql_last_Nepal_hiker);
+        $result_last_Nepal_hiker = sqlsrv_query($conn, $sql_last_Nepal_hiker);
 
 
-    // Displays the Table
-    echo '<table>';
+        // Displays the Table
+        echo '<table>';
 
-    echo "<thead><tr><th>Most Hiked Trek</th><th>Most Experienced Hiker</th><th>Special Hiker</th></tr></thead>";
+        echo "<thead><tr><th>Most Hiked Trek</th><th>Most Experienced Hiker</th><th>Special Hiker</th></tr></thead>";
 
-    $row1 = sqlsrv_fetch_array($result_most_hiked_trek, SQLSRV_FETCH_NUMERIC);
-    $mostHikedTrek = $row1[0];
+        $row1 = sqlsrv_fetch_array($result_most_hiked_trek, SQLSRV_FETCH_NUMERIC);
+        $mostHikedTrek = $row1[0];
 
-    $row2 = sqlsrv_fetch_array($result_most_hiked_trek, SQLSRV_FETCH_NUMERIC);
-    $MostTrekkedHiker = $row2[0];
+        $row2 = sqlsrv_fetch_array($result_most_hiked_trek, SQLSRV_FETCH_NUMERIC);
+        $MostTrekkedHiker = $row2[0];
 
-    $row3 =sqlsrv_fetch_array($result_last_Nepal_hiker, SQLSRV_FETCH_NUMERIC);
-    $LastNepalHiker = $row3[0];
+        $row3 =sqlsrv_fetch_array($result_last_Nepal_hiker, SQLSRV_FETCH_NUMERIC);
+        $LastNepalHiker = $row3[0];
 
-    echo "<tr><td>".$mostHikedTrek."</td><td>".$MostTrekkedHiker."</td><td>".$LastNepalHiker."</td></tr>";
-    echo "</table>";
+        echo "<tr><td>".$mostHikedTrek."</td><td>".$MostTrekkedHiker."</td><td>".$LastNepalHiker."</td></tr>";
+        echo "</table>";
 
-    /* Close the connection. */
-    sqlsrv_close( $conn);
+        /* Close the connection. */
+        sqlsrv_close( $conn);
     ?>
 </body>
 </html>

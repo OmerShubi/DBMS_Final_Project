@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Trek Pro Analytics | File</title>
+    <title>Trek Pro Analytics | Map</title>
 </head>
 <body style="text-align:center">
 
