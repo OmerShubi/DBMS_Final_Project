@@ -7,12 +7,10 @@
 
     <!--    Connect to the database   -->
     <?php
-    include 'db_connection.php';
-    $conn = OpenCon();
+        include 'db_connection.php';
+        $conn = OpenCon();
     ?>
-    <h2 style="font-size:20px;color:white">
-        Add new data below
-    </h2>
+
     <br>
 
     <!--    ID Input Form   -->
@@ -44,7 +42,7 @@
                 echo "<H3 style='color: darkred'>
                         I don't know who you are. But I will find you, and I will teach you SQL!
                         </H3>
-                        <img src=\"user_not_exist.jpg\" alt=\"Unkown User ID\">";
+                        <img src=\"user_not_exist.jpg\" alt=\"Unknown User ID\">";
             }
             else{
                 $sql = "SELECT Trek.trekName, LAT, LONG
@@ -60,7 +58,7 @@
                 }
             }
         }
-?>
+    ?>
 
     <!--    Map -->
     <script type='text/javascript'>
@@ -95,13 +93,14 @@
             ?>
         }
         <?php
-        if($is_empty != 0){
-            echo "GetMap()";
+            if($is_empty != 0) {
+                echo "GetMap()";
+            }
         ?>
 
     </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AvJZzTmbwvMGXaZRbr3HrfyHDxYBVVFpkxnqpzkFg6d1P8lTk6vOAEnsYqSUYJB7'></script>
-        <div id="mapContainer" class="standardMap" style="width:50%;height:50%">
+        <div id="mapContainer" class="standardMap" style="width:70%;height:70%">
             <div id="myMap"></div></div>
 
     <!--    Close the connection -->
