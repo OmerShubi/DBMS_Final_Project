@@ -25,18 +25,18 @@
                         <input name="ID" type="text" size="24" required>
                     </label></td>
             </tr>
-            <!--    Name   -->
+            <!--    Full Name   -->
             <tr>
-                <td><label for="Name">Name</label></td>
+                <td><label for="Name">Full Name</label></td>
                 <td><label>
-                        <input name="Name" type="text" size="24" required>
+                        <input name="Name" type="text" size="24">
                     </label></td>
             </tr>
             <!--    Country   -->
             <tr>
                 <td><label for="Country">Country</label></td>
                 <td><label>
-                        <input name="Country" type="text" size="24" required>
+                        <input name="Country" type="text" size="24">
                     </label></td>
             </tr>
             <!--    Fitness   -->
@@ -47,6 +47,9 @@
                     </label>100</td>
             </tr>
             <!--    Smoker   -->
+            <tr>
+                <td><label for="Smoker">Smoker:</label></td>
+            </tr>
             <tr>
                 <td>
                     <label>
