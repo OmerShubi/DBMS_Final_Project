@@ -10,7 +10,7 @@
 
 <body class="main">
 
-    <img src="banner.jpg" alt="Trek Pro Analytics Logo" style="width: 80%; border: 1px solid black">
+    <img src="banner.jpg" alt="Trek Pro Analytics Logo" style="width: 100%; border: 1px solid black">
 
     <div class="layer">
 
