@@ -20,7 +20,7 @@
         $sql = "SELECT trekName 
                 FROM HikerInTrek 
                 GROUP BY trekName 
-                ORDER BY COUNT(hikerID);" ;
+                ORDER BY COUNT(hikerID);";
 
         $result = sqlsrv_query($conn, $sql);
 
