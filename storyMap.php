@@ -40,10 +40,7 @@
             $is_empty = $row[0];
             // Checks whether table is empty or not, to determine ID of next item
             if($is_empty == 0){
-                echo "<H3 style='color: darkred'>
-                        I don't know who you are. But I will find you, and I will teach you SQL!
-                        </H3>
-                        <img src=\"user_not_exist.jpg\" alt=\"Unknown User ID\">";
+                echo "<img src=\"user_not_exist.jpg\" alt=\"Unknown User ID\">";
             }
             else{
                 $sql = "SELECT Trek.trekName, LAT, LONG
@@ -62,12 +59,16 @@
     ?>
 
     <!--    Map -->
+
     <script type='text/javascript'>
         var map;
         function GetMap() {
             //Initialzing Map Obejct
-            map = new Microsoft.Maps.Map('#myMap', {});
-
+            <?php
+            if($is_empty != 0) {
+                echo "map = new Microsoft.Maps.Map('#myMap', {});";
+            }
+            ?>
             //Setting the center of the map - you can choose any intial center location you like.
             map.setView({
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial,
@@ -93,11 +94,7 @@
             //--End of pin code--
             ?>
         }
-        <?php
-            if($is_empty != 0) {
-                echo "GetMap()";
-            }
-        ?>
+
 
     </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AvJZzTmbwvMGXaZRbr3HrfyHDxYBVVFpkxnqpzkFg6d1P8lTk6vOAEnsYqSUYJB7'></script>
