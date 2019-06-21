@@ -30,39 +30,28 @@
 
     <!--    Query Database   -->
     <?php
-    if (isset($_POST["submit"]))
-    {
-        // Insert data into database
-        //TODO HANDLE CASE WHERE NOT EXISTS
-        $userID = $_POST['ID'];
-        $sql = "SELECT Trek.trekName, LAT, LONG
-                FROM HikerInTrek HiT, Trek
-                WHERE HiT.trekName = Trek.trekName AND HiT.hikerID = '".$userID."'
-                ORDER BY HiT.startDate ASC;";
-
-        $sql_result = sqlsrv_query($conn, $sql);
-
-        // In case of failure
-        if (!$sql_result) {
-            die("<h3 style='color:darkred;'>Unexpected error. Please try again.</h3>");
-        }
-
-        while($row = sqlsrv_fetch_array($sql_result, SQLSRV_FETCH_ASSOC))
+        if (isset($_POST["submit"]))
         {
-            $trekName = $row['trekName'];
-            $LAT = $row['LAT'];
-            $LONG= $row['LONG'];
+            // Insert data into database
+            //TODO HANDLE CASE WHERE NOT EXISTS
+            $userID = $_POST['ID'];
+            $sql = "SELECT Trek.trekName, LAT, LONG
+                    FROM HikerInTrek HiT, Trek
+                    WHERE HiT.trekName = Trek.trekName AND HiT.hikerID = '".$userID."'
+                    ORDER BY HiT.startDate ASC;";
+
+            $sql_result = sqlsrv_query($conn, $sql);
+            $counter = 1;
+            // In case of failure
+            if (!$sql_result) {
+                die("<h3 style='color:darkred;'>Unexpected error. Please try again.</h3>");
+            }
+
         }
-    }
-    ?>
+?>
 
-    <!--    Map -->
-
-    <div>
+    //<!--    Map -->
     <script type='text/javascript'>
-
-        //In order to display the map - you will need to insert this code into your website.
-        //Remember that with PHP - you can modify this code with suitable values from the database.
         var map;
         function GetMap()
         {
@@ -77,29 +66,30 @@
             });
 
             //--Code for adding a pin--
-
-            //add relevant trek location here - the format is Lat/Long
-            var center = new Microsoft.Maps.Location(28.595,83.819);
-            //pin definition code - replace the title with trek name and the number (according to project requirements)
-            var pin = new Microsoft.Maps.Pushpin(center, {
-                title: 'Annapurna',
-                text:'1'
-            });
-            //Add pushpin to the map.
-            map.entities.push(pin);
-
+            <?php
+            while($row = sqlsrv_fetch_array($sql_result, SQLSRV_FETCH_ASSOC)) {
+                $counter = $counter + 1;
+                $LAT = $row['LAT'];
+                //add relevant trek location here - the format is Lat/Long
+                echo "var center = new Microsoft.Maps.Location('".$LAT."', '".$row['LONG']."');
+                //pin definition code - replace the title with trek name and the number (according to project requirements)
+                var pin = new Microsoft.Maps.Pushpin(center, {
+                    title: '".$row['trekName']."',
+                    text: '".$counter."'
+                });
+                //Add pushpin to the map.
+                map.entities.push(pin);";
+            }
+            ?>
             //In order to add more pins - all you have to do is to reuse the code above with different parameter values
 
             //--End of pin code--
         }
         GetMap()
-
-    </script>
+    </script>";
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AvJZzTmbwvMGXaZRbr3HrfyHDxYBVVFpkxnqpzkFg6d1P8lTk6vOAEnsYqSUYJB7'></script>
-    <center>
         <div id="mapContainer" class="standardMap" style="width:50%;height:50%">
             <div id="myMap"></div></div>
-    </div>
 
     <!--    Close the connection -->
     <?php
