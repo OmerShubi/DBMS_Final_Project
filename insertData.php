@@ -22,30 +22,30 @@
             <tr>
                 <td><label for="ID">ID*</label></td>
                 <td><label>
-                        <input name="ID" type="text" size="24" required>
+                        <input name="ID" type="text" size="24" required placeholder="Numbers Only!">
                     </label></td>
-            </tr>
+            </tr><br>
             <!--    Full Name   -->
             <tr>
                 <td><label for="Name">Full Name</label></td>
                 <td><label>
-                        <input name="Name" type="text" size="24">
+                        <input name="Name" type="text" size="24" placeholder="Your Name Here">
                     </label></td>
-            </tr>
+            </tr><br>
             <!--    Country   -->
             <tr>
                 <td><label for="Country">Country</label></td>
                 <td><label>
-                        <input name="Country" type="text" size="24">
+                        <input name="Country" type="text" size="24" placeholder="Country of Birth">
                     </label></td>
-            </tr>
+            </tr><br>
             <!--    Fitness   -->
             <tr>
                 <td><label for="Fitness">Fitness</label></td>
                 <td>0<label>
                         <input name="Fitness" type="range" step="1" min="0" max="100">
                     </label>100</td>
-            </tr>
+            </tr><br>
             <!--    Smoker   -->
             <tr>
                 <td><label for="Smoker">Smoker:</label></td>
@@ -66,7 +66,7 @@
                         Yes
                     </label>
                 </td>
-            </tr>
+            </tr><br>
             <!--    Submission & Reset Buttons   -->
             <tr>
                 <td><input name="submit" type="submit" value="Add Result"></td>
