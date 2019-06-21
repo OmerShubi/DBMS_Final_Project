@@ -14,7 +14,7 @@
 
     <div class="layer">
 
-        <h1 style="color: ghostwhite; background-color: #263f63">
+        <h1 style="color: ghostwhite; background-color: rgb(28, 47, 73);">
             <i>Advanced Database & Analytics Tool. &nbsp; For Hikers by Hikers.</i>
         </h1>
 
