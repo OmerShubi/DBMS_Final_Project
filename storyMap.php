@@ -41,7 +41,7 @@
                     ORDER BY HiT.startDate ASC;";
 
             $sql_result = sqlsrv_query($conn, $sql);
-            $counter = 1;
+            $counter = 0;
             // In case of failure
             if (!$sql_result) {
                 die("<h3 style='color:darkred;'>Unexpected error. Please try again.</h3>");
@@ -50,7 +50,7 @@
         }
 ?>
 
-    //<!--    Map -->
+    <!--    Map -->
     <script type='text/javascript'>
         var map;
         function GetMap()
