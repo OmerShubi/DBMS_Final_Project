@@ -21,7 +21,7 @@
         <h2 style="font-size:20px;color:white">
             Enter Your ID
         </h2>
-        <label for="ID">ID</label></td>
+        <label for="ID">ID</label>
         <label>
                 <input name="ID" type="number" size="24" required placeholder="Your ID">
         </label>
@@ -92,13 +92,12 @@
                 map.entities.push(pin);";
             }
             //--End of pin code--
-
-            echo "}";
+            ?>
+        }
+        <?php
         if($is_empty != 0){
             echo "GetMap()";
         ?>
-
-
 
     </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AvJZzTmbwvMGXaZRbr3HrfyHDxYBVVFpkxnqpzkFg6d1P8lTk6vOAEnsYqSUYJB7'></script>
