@@ -42,7 +42,8 @@ iframe
 a:link {font-family: Tahoma, Geneva, sans-serif ; color:white}
 a:visited  {color:white}
 a:active   {color:yellow}
-a:hover    {color:blue}
+a:hover    {color: #519feb
+}
 
 body.main {
     background: #263f63;

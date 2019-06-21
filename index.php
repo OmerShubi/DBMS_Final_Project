@@ -14,15 +14,11 @@
 
     <div class="layer">
 
-        <h2 style="color: ghostwhite">
-            <br><i>Advanced Database & Analytics Tool. &nbsp; For Hikers by Hikers.</i><br>
-        </h2>
-       <div style="background-color: rgba(255,255,255,0.7)">
-           <h3  style="color: ghostwhite; vertical-align: center">
-                &nbsp;
-           </h3>
-       </div>
-    <h3>
+        <h1 style="color: ghostwhite">
+            <i>Advanced Database & Analytics Tool. &nbsp; For Hikers by Hikers.</i>
+        </h1>
+
+    <h3 style="background-color: rgba(255,255,255,0.7); padding-bottom: 7px; padding-top: 7px">
             <a href="displayTable.php" target="MainFrame">DISPLAY STATS</a>
             &nbsp;&nbsp;&nbsp;
             <a href="addDataFile.php" target="MainFrame">LOAD DATA</a>
