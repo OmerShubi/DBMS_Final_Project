@@ -22,31 +22,25 @@
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
         <input name="csv1" type="file" id="csv1" accept=".csv" />
         <input type="submit" name="submit1" value="Upload" />
-    </form>
     <br>
 
     <h2 style="font-size:20px;color:white">
             New Trek Data
     </h2>
-    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
         <input name="csv2" type="file" id="csv2" accept=".csv" />
         <input type="submit" name="submit2" id="submit2" value="Upload" />
-    </form>
     <br>
 
     <h2 style="font-size:20px;color:white">
             New Treks in Countries Data
     </h2>
-    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
         <input name="csv3" type="file" id="csv3" accept=".csv" />
         <input type="submit" name="submit3" value="Upload" />
-    </form>
     <br>
 
     <h2 style="font-size:20px;color:white">
         New Hikers in Treks Data
     </h2>
-    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
         <input name="csv4" type="file" id="csv4" accept=".csv" />
         <input type="submit" name="submit4" value="Upload" />
     </form>
