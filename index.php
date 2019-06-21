@@ -18,7 +18,7 @@
             <br>Trek Pro Analytics is an advanced Database & Analytics tool <br>
         </h1>
        <div style="background-color: rgba(255,255,255,0.7)">
-           <h2  style="color: #2e0e6b; vertical-align: center">
+           <h2  style="color: #093738; vertical-align: center">
                <i>for Hikers by Hikers.</i>
            </h2>
        </div>
