@@ -37,7 +37,9 @@
             $userID = $_POST['ID'];
 
             $sql = "SELECT COUNT(*) FROM Hiker WHERE Hiker.ID = '".$userID."'";
-            $is_empty = sqlsrv_query($conn, $sql);
+            $result = sqlsrv_query($conn, $sql);
+            $row = sqlsrv_fetch_array($result, SQLSRV_FETCH_NUMERIC);
+            $is_empty = $row[0];
             // Checks whether table is empty or not, to determine ID of next item
             if($is_empty == 0){
                 echo "<H3 style='color: darkred'>
