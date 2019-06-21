@@ -76,8 +76,9 @@
                     }
                 }
                 fclose($handle);
+                echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL ($counter records uploaded)</h3>";
+
             }
-            echo"<h3 style='color: darkgreen'>UPLOAD SUCCESSFUL</h3>";
         }
     /* Close the connection. */
     sqlsrv_close( $conn);
