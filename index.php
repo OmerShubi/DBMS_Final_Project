@@ -12,14 +12,14 @@
 
     <img src="banner.jpg" alt="Trek Pro Analytics Logo" style="width: 100%; border: 1px solid black">
 
-    <div class="layer">
+    <div class="layer" style="color: #093738">
 
         <h1>
-            <br>Trek Pro Analytics is an advanced Database & Analytics tool <br>
+            <br>Trek Pro Analytics<br>
         </h1>
        <div style="background-color: rgba(255,255,255,0.7)">
            <h2  style="color: #093738; vertical-align: center">
-               <i>for Hikers by Hikers.</i>
+               <i>Advanced Database & Analytics Tool. For Hikers by Hikers.</i>
            </h2>
        </div>
     <h3>

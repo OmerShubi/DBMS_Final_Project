@@ -24,6 +24,7 @@ th,td
     text-align: center;
     word-spacing: normal;
     border: 1px solid black;
+    padding: 5px;
 }
 th{
     padding: 5px;
@@ -55,7 +56,6 @@ body.main {
     width: 80%;
     height: auto;
     text-align: center;
-    color: #093738;
 }
 
 div {
