@@ -6,14 +6,14 @@
 <body>
     <?php
         include 'db_connection.php';
-        include 'Create_Tables.sql';
+        //include 'Create_Tables.sql';
         // Open Connection
         $conn = OpenCon();
 
 
         // Creates the table. If already exists the query sends back an error, but has no effect
         // So continues program as expected.
-        $sql = "'".file_get_contents('Create_Tables.sql')."'";
+        $sql = file_get_contents('Create_Tables.sql');
         sqlsrv_query($conn, $sql);
 
         // Displays the Table
