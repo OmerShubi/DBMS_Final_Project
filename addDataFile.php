@@ -5,10 +5,10 @@
 </head>
 <body style="text-align:center">
 
-
-    <?php
+<!--    Connect to the database   -->
+<?php
         include 'db_connection.php';
-        $conn = OpenCon();        // Connect to the database
+        $conn = OpenCon();
     ?>
     <h2 style="font-size:20px;color:white">
         Add new data below

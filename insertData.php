@@ -9,85 +9,62 @@
         New Hiker? Add your Info Below!
     </h2>
 
+    <!--    Connect to the database   -->
     <?php
         include 'db_connection.php';
-        $conn = OpenCon(); // Connect to the database
+        $conn = OpenCon();
     ?>
 
-<!--    Data Insertion Form   -->
+    <!--    Data Insertion Form   -->
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
         <table class="insertion_table">
+            <!--    ID   -->
             <tr>
-                <td><label for="Home">Home Team:</label></td>
+                <td><label for="ID">ID*</label></td>
                 <td><label>
-                        <select name="Home">
-                            <option value="">Choose home team</option>
-                            <?php
-                                // Dynamically display Teams in dropdown list
-                                $sql = "SELECT Home as Teams FROM PremierLeague UNION SELECT Away as Teams FROM PremierLeague";
-                                $result = sqlsrv_query($conn, $sql);
-                                while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
-                                {
-                                    echo "<option value=".$row['Teams'].">".addslashes($row['Teams'])."</option>";
-                                }
-                            ?>
-                        </select>
+                        <input name="ID" type="text" size="24" required>
                     </label></td>
             </tr>
+            <!--    Name   -->
             <tr>
-                <td><label for="Away">Away Team:</label></td>
+                <td><label for="Name">Name</label></td>
                 <td><label>
-                        <select name="Away">
-                            <option value="">Choose away team</option>
-                            <?php
-                            // Dynamically display Teams in dropdown list
-                            $sql = "SELECT Home as Teams FROM PremierLeague UNION SELECT Away as Teams FROM PremierLeague";
-                                $result = sqlsrv_query($conn, $sql);
-                                while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
-                                {
-                                    echo "<option value=".$row['Teams'].">".addslashes($row['Teams'])."</option>";
-                                }
-                            ?>
-                            </select>
+                        <input name="Name" type="text" size="24" required>
                     </label></td>
             </tr>
+            <!--    Country   -->
             <tr>
-                <td><label for="result">Result:</label></td>
-            </tr>
-            <tr>
+                <td><label for="Country">Country</label></td>
                 <td><label>
-                        <input name="result" type="radio" value="H">
-                    </label><label for="H">H</label><br>
-                    <label>
-                        <input name="result" type="radio" value="D">
-                    </label><label for="D">D</label><br>
-                    <label>
-                        <input name="result" type="radio" value="A">
-                    </label><label for="A">A</label></td>
+                        <input name="Country" type="text" size="24" required>
+                    </label></td>
             </tr>
-            <tr style="padding-bottom: 5px">
-                <td><label for="home_goals">Home Goals</label></td>
+            <!--    Fitness   -->
+            <tr>
+                <td><label for="Fitness">Fitness</label></td>
                 <td>0<label>
-                        <input name="home_goals" type="range" step="1" min="0" max="10">
-                    </label>10</td>
+                        <input name="Fitness" type="range" step="1" min="0" max="100">
+                    </label>100</td>
             </tr>
-            <tr style="padding-bottom: 5px">
-                <td><label for="away Goals">Away Goals</label></td>
-                <td>0<label>
-                        <input name="away_goals" type="range" step="1" min="0" max="10">
-                    </label>10</td>
+            <!--    Smoker   -->
+            <tr>
+                <td>
+                    <label>
+                        <input name="Smoker" type="radio" value="No" checked="checked">
+                    </label>
+                    <label for="No">
+                        No
+                    </label>
+                    <br>
+                    <label>
+                        <input name="Smoker" type="radio" value="Yes">
+                    </label>
+                    <label for="Yes">
+                        Yes
+                    </label>
+                </td>
             </tr>
-            <tr style="padding-bottom: 5px">
-                <td><label for="season">Season*</label></td>
-                <td><label>
-                        <input name="season" type="text" size="24" required>
-                    </label></td>
-            </tr>
-            <tr style="padding-bottom: 5px">
-                <td colspan="2"><label>
-                        <textarea name="notes" Rows="5" cols="36" placeholder="Write here a special note"></textarea>
-                    </label></td>
-            </tr>
+            <!--    Submission & Reset Buttons   -->
             <tr>
                 <td><input name="submit" type="submit" value="Add Result"></td>
                 <td><input name="reset" type="reset" value="Reset Page"></td>
@@ -95,6 +72,7 @@
         </table>
     </form>
 
+    <!--    Submit Data to Database   -->
     <?php
         if (isset($_POST["submit"]))
         {
