@@ -30,7 +30,8 @@
             <tr>
                 <td><label for="fullName">Full Name</label></td>
                 <td><label>
-                        <input name="fullName" type="text" size="24" placeholder="Your name here">
+                        <input name="fullName" type="text" size="24"
+                               placeholder="Your name here" maxlength="20">
                     </label></td>
             </tr>
             <tr></tr>
@@ -39,7 +40,8 @@
             <tr>
                 <td><label for="originCountry">Country</label></td>
                 <td><label>
-                        <input name="originCountry" type="text" size="24" placeholder="Country of Birth">
+                        <input name="originCountry" type="text" size="24"
+                               placeholder="Country of Birth" maxlength="20">
                     </label></td>
             </tr>
             <tr></tr>
@@ -102,10 +104,10 @@
 
             // In case of failure
             if (!$sql_result) {
-                die("<h3 style='color:darkred;'>UPLOAD FAILED<br>(Full Name & Country Max 20 Characters)</h3>");
+                die("<h3 style='color:darkred;'>Upload Failed. Please try again.</h3>");
             }
             else{
-                echo "<H3 style='color: darkgreen'>Hiker Added</H3>";
+                echo "<H3 style='color: darkgreen'>Hiker Added Successfully</H3>";
             }
         }
     /* Close the connection. */

@@ -45,11 +45,11 @@ a:active   {color:yellow}
 a:hover    {color:blue}
 
 body.main {
-    background: cadetblue;
+    background: #263f63;
     background-size: cover;
     text-align: center;
     margin-left: 0px;
-    margin-bottom: 0px;
+    margin-top: 0px;
     margin-right: 0px;
 }
 

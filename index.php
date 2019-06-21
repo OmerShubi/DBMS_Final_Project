@@ -10,15 +10,15 @@
 
 <body class="main">
 
-    <img src="banner.jpg" alt="Trek Pro Analytics Logo" style="width: 100%; border: 1px solid black">
+    <img src="banner.jpg" alt="Trek Pro Analytics Logo" style="width: 100%; ">
 
     <div class="layer">
 
-        <h1 style="color: #093738">
+        <h1 style="color: ghostwhite">
             <br>Trek Pro Analytics<br>
         </h1>
        <div style="background-color: rgba(255,255,255,0.7)">
-           <h3  style="color: #093738; vertical-align: center">
+           <h3  style="color: ghostwhite; vertical-align: center">
                <i>Advanced Database & Analytics Tool. For Hikers by Hikers.</i>
            </h3>
        </div>
@@ -34,7 +34,7 @@
         <iframe name="MainFrame" src="displayTable.php"></iframe>
         <br>
 
-    <footer style="color: #2e0e6b"><br>&copy; COPYRIGHT 2019 | PLOZNIK & SHUBI</footer>
+    <footer style="color: white"><br>&copy; COPYRIGHT 2019 | PLOZNIK & SHUBI</footer>
     </div>
 </body>
 </html>
